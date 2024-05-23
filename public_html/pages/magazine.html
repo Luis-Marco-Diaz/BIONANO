@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+      
+        gtag('config', 'G-R3LCYK2E0F');
+      </script> 
+      <script src="../assets/js/components/downloads.js" ></script>
+      <script src="../assets/js/cookies.js"></script>
+          <meta charset="UTF-8">
+          <meta http-equiv="X-UA-Compatible" content="IE=edge">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <meta name="Autor" content="FrontEnd Developer Luis Marco Díaz">
+          <link rel="preconnect" href="https://fonts.googleapis.com">
+          <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+          <link href="https://fonts.googleapis.com/css2?family=Geologica:wght@100;200;400;600;800&display=swap" rel="stylesheet">
+          <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+          <link rel="stylesheet" href="/assets/css/style.css">
+          <link rel="stylesheet" href="/assets/css/megazine.css">
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+          <title>BSTPortalBlog.com</title>
+      </head>
+<body>
+<!-- HEADER -->
+      <header class="header">
+          <nav class="navbar">
+              <a class="navbar__logo" href="#" >
+                <img alt="BSTPortal.com" onclick="window.open('https://www.bstportal.com')"  src="/assets/img/BST-Logo-bco.png" width="250" height="auto" style="padding-left: 10px; cursor: pointer;" >
+              </a>
+              <div id="nav" class="navbar__menu">
+              <a href="#close"><i class='bx bx-x  btn__close navbar__icon'></i></a>
+               <ul class="navbar__list">
+                  <li class="navbar__item">
+                    <a class="navbar__link" href="https://bstportal.com/valida.php" style="font-family: Geologica;" onclick="return confirm_alert(this);">  DIRECT ACCESS</a>
+                  </li>  
+               </ul>
+            </div>
+            <div id="google_translate_element"></div>
+            <a href="#nav"><i class="bx bx-menu btn__open navbar__icon"></i></a>
+          </nav>
+      </header>
+<!-- SECTION  -->
+<section class="blog" >
+    
+<!-- HOME -->
+    <div class="megazzinehome" >
+      <h1><span style="color: #e30613;">BST</span>PortalBlog.com</h1>    
+      <h2>Latest Publications</h2>
+      <div class="carrusel" >
+    <!-- EMBED MODAL -->
+                <div class="Description" >
+                  <br>
+                  
+                  <div class="Latestmobile" >
+                    <a id="myBtn" onclick="openModal()"  >
+                      <img class="img_cards2" src="./Articles/MG1/MG1-ESP/1.jpg">
+                    </a>
+                  </div>
+                  <h2>Importance of inventory Optimization</h2>
+                  <p>it is important to ensure that the inventory shown in your financial statement is accurate and balanced. Understanding that keeping your inventory from being too high or too low can help you to make better financial forecasts.</p>
+                  <div>
+                    <br>
+                    <h2>Latest Publication Downloads</h2>
+                    <br>
+                    <div class="DownloadSection" >
+                <!-- ENGLISH -->
+                        <div class="areas" >
+                          <a class="bdownload" style=" background:linear-gradient(0deg, rgba(0, 0, 0, 0.652), rgba(0, 0, 0, 0.5)), url(./Articles/img/English.png); background-size: cover; background-position: center center; background-repeat: no-repeat;" onclick="MagazineEnglish()"
+                          >English</a>
+                        </div>
+                <!-- SPANISH -->
+                          <div class="areas" >
+                            <a class="bdownload" style=" background:linear-gradient(0deg, rgba(0, 0, 0, 0.652), rgba(0, 0, 0, 0.5)), url(./Articles/img/Spain_flag.png); background-size: cover; background-position: center center; background-repeat: no-repeat;"
+                          onclick="MagazineSpanish()"
+                          >Spanish</a>
+                          </div>
+                 <!-- FRENCH -->
+                          <div class="areas" >
+                          <a class="bdownload" style=" background:linear-gradient(0deg, rgba(0, 0, 0, 0.652), rgba(0, 0, 0, 0.5)), url(./Articles/img/France.png); background-size: cover; background-position: center center; background-repeat: no-repeat;"
+                          onclick="MagazineFrench()"
+                          >French</a>
+                          </div>
+                 <!-- GERMAN -->
+                   <div class="areas" >
+                    <a class="bdownload" style=" background:linear-gradient(0deg, rgba(0, 0, 0, 0.652), rgba(0, 0, 0, 0.5)), url(./Articles/img/German.png); background-size: cover; background-position: center center; background-repeat: no-repeat;"
+                          onclick="MagazineGerman()"
+                          >German</a>
+                    </div>
+                 <!-- ITALIAN -->
+                        <div class="areas" >
+                          <a class="bdownload" style=" background:linear-gradient(0deg, rgba(0, 0, 0, 0.652), rgba(0, 0, 0, 0.5)), url(./Articles/img/Italy.png); background-size: cover; background-position: center center; background-repeat: no-repeat;"
+                                    onclick="MagazineItalian()"
+                                    >Italian</a>
+                        </div>
+              <!-- Portuguese -->
+                        <div class="areas" >
+                          <a class="bdownload" style=" background:linear-gradient(0deg, rgba(0, 0, 0, 0.652), rgba(0, 0, 0, 0.5)), url(./Articles/img/PortugueseLang.jpeg); background-size: cover; background-position: center center; background-repeat: no-repeat;"
+                                    onclick="MagazinePortuguese()"
+                                    >Portuguese</a>
+                        </div>
+                      </div>
+
+                    </div>
+                  </div>
+                  <div >
+                    <iframe src="./Articles/Latest.html"></iframe>
+                  </div>
+      </div>
+    </div>
+
+<!-- SELECT FILTER -->
+    <h2>Select by Category</h2>
+    <div class="controls" >
+            <a class="selector" onclick="filtcat('all')">ALL</a>
+            <a class="selector" onclick="filtcat('mg')">MONTHLY NEWSLETTER</a>
+            <a class="selector" onclick="filtcat('eb')">E-BOOK</a>
+            <a class="selector" onclick="filtcat('ar')">ARTICLES</a>
+            <a class="selector" onclick="filtcat('nw')">QUARTERLY NEWSLETTER</a>
+            <a class="selector" onclick="filtcat('ca')">BST CATALOG</a>
+            <a class="selector" onclick="filtcat('vd')">VIDEOS</a>
+    </div>
+          
+<!-- SECTION TODO (CARDS) -->
+    <section id="todo" style="align-items: center; text-align: center;" >
+        <article style="display: flex; flex-wrap: wrap; justify-content: space-evenly;" >
+              <div class='ar'>
+                  <h3>MAGAZINE</h3>
+                  <a id="myBtn" onclick="openModal()"  >
+                    <img class="img_cards2" src="./Articles/MG1/MG1-ESP/1.jpg">
+                  </a>
+                    <a class="adownload" href="" onclick="MagazineEnglish()" >Download</a>
+              </div>
+
+              <div class="eb">
+                  <h3>EBOOK VOL 1</h3>
+                  <a style="cursor: pointer;" id="EbookBtn" onclick="Ebook()"  >
+                    <img class="img_cards2" src="./Articles/BSTEbookVol1/1.jpg">
+                  </a>
+              </div>
+
+              <div class="eb">
+                  <h3>EBOOK VOL 2</h3>
+                  <a style="cursor: pointer;" id="EbookBtn2" onclick="Ebook2()"  >
+                    <img class="img_cards2" src="./Articles/BSTEbookVol2/1.jpg">
+                  </a>
+              </div>
+
+              <div class="eb">
+                  <h3>EBOOK VOL 3</h3>
+                  <a style="cursor: pointer;" id="Ebook3" onclick="Ebook3()"  >
+                    <img class="img_cards2" src="./Articles/BSTEbookVol3/1.jpg">
+                  </a>
+              </div>
+
+              <div class='eb'>
+                  <h3>EBOOK VOL 4</h3>
+                  <a style="cursor: pointer;" id="Ebook4" onclick="EbookCuatro()"  >
+                    <img class="img_cards2" src="./Articles/BSTEbookVol4/1.jpg">
+                  </a>
+              </div>
+
+              <div class="ar">
+                <h3>INVENTORY MANAGEMENT</h3>
+                <a style="cursor: pointer;" id="myBtn" onclick="Art1()"  >
+                  <img class="img_cards2" src="./Articles/ART1/ART1.jpg">
+                </a>
+            </div>
+
+            <div class="ar">
+                <h3>BOOST YOUR PROFITABILITY</h3>
+                <a style="cursor: pointer;" id="myBtn" onclick="Art2()"  >
+                  <img class="img_cards2" src="./Articles/ART2/ART2.jpg">
+                </a>
+            </div>
+
+              <div class='mg'>
+                  <h3>NEWSLETTER OCTOBER 2023</h3>
+                  <a style="cursor: pointer;" id="BemOct" onclick="Bem1()"  >
+                    <img class="img_cards2" src="./Articles/BEMOCT23/BEMOCT23.jpg">
+                  </a>
+              </div>
+
+                <div class="mg">
+                  <h3>NEWSLETTER NOVEMBER 2023</h3>
+                  <a style="cursor: pointer;" id="myBtn" onclick="Bem2()"  >
+                    <img class="img_cards2" src="./Articles/BEMNOV23/BEMNOV23.jpg">
+                  </a>
+              </div>
+              
+              <div class="mg">
+                <h3>NEWSLETTER JANUARY 2024</h3>
+                <a style="cursor: pointer;" id="myBtn" onclick="Bem3()"  >
+                  <img class="img_cards2" src="./Articles/BEMENE24/BEMENE24.jpg">
+                </a>
+            </div>
+
+            <div class="nw">
+              <h3>QUARTERLY NEWSLETTER JAN. 2024</h3>
+              <a style="cursor: pointer;" id="myBtn" onclick="Bdt1()"  >
+                <img class="img_cards2" src="./Articles/BDTDIC23/BDT01.jpg">
+              </a>
+          </div>
+
+                <div class="mg">
+                  <h3>NEWSLETTER FEBRUARY 2024</h3>
+                  <a style="cursor: pointer;" id="myBtn" onclick="Bem4()"  >
+                    <img class="img_cards2" src="./Articles/BEMFEB24/BEMFEB24.jpg">
+                  </a>
+              </div>
+              
+              <div class="mg">
+                <h3>NEWSLETTER MARCH 2024</h3>
+                <a style="cursor: pointer;" id="myBtn" onclick="Bem5()"  >
+                  <img class="img_cards2" src="./Articles/BEMMAR24/BEMMAR24.jpg">
+                </a>
+            </div>
+
+            <div class="ca">
+              <h3>BST CATALOG</h3>
+              <a style="cursor: pointer;" id="myBtn" onclick="Catalog()"  >
+                <img class="img_cards2" src="./Articles/BSTCAT/BSTCatalog.jpg">
+              </a>
+          </div>
+        </article>
+    </section>
+
+<!-- MODALS ZONE -->
+     <article>
+
+      <!-- MAGAZINE #1 -->
+          <div id="myModal" class="modal">
+            <!-- Modal content -->
+            <div class="modal-content">
+              <a class="close">&times;</a>
+              <div >
+                <iframe src="./Articles/MG1.html"></iframe>
+              </div>
+            </div>
+          </div>
+
+      <!-- EBOOKVOL-1 -->
+          <div id="Ebook1" class="modal">
+            <!-- Modal content -->
+            <div class="modal-content">
+              <a class="close">&times;</a>
+              <div >
+                <iframe src="./Articles/BSTEbookVol1.html"></iframe>
+              </div>
+            </div>
+          </div>
+
+          <!-- EBOOKVOL-2 -->
+          <div id="Ebook2" class="modal">
+            <!-- Modal content -->
+            <div class="modal-content">
+              <span class="close">&times;</span>
+              <div >
+                <iframe src="./Articles/BSTEbookVol2.html"></iframe>
+              </div>
+            </div>
+          </div>
+
+        <!-- EBOOKVOL-3 -->
+        <div id="Eb3" class="modal">
+          <!-- Modal content -->
+          <div class="modal-content">
+            <a class="close">&times;</a>
+            <div >
+              <iframe src="./Articles/BSTEbookVol3.html"></iframe>
+            </div>
+          </div>
+        </div>
+
+        <!-- EBOOKVOL-4 -->
+        <div id="Eb4" class="modal">
+          <!-- Modal content -->
+          <div class="modal-content">
+            <a class="close">&times;</a>
+            <div >
+              <iframe src="./Articles/BSTEbookVol4.html"></iframe>
+            </div>
+          </div>
+        </div>
+
+        <!-- BEMOCT-2023 -->
+        <div id="BemOct23" class="modal">
+          <!-- Modal content -->
+          <div class="modal-content">
+            <a class="close">&times;</a>
+            <div >
+              <iframe src="./Articles/newsletteroctober2023.html"></iframe>
+            </div>
+          </div>
+        </div>
+
+        <!-- BEMNOV-2023 -->
+        <div id="BemNov23" class="modal">
+          <!-- Modal content -->
+          <div class="modal-content">
+            <a class="close">&times;</a>
+            <div >
+              <iframe src="./Articles/newsletternovember2023.html"></iframe>
+            </div>
+          </div>
+        </div>
+
+        <!-- BEMENE-2024 -->
+        <div id="BemEne24" class="modal">
+          <!-- Modal content -->
+          <div class="modal-content">
+            <a class="close">&times;</a>
+            <div >
+              <iframe src="./Articles/newsletterjanuary2024.html"></iframe>
+            </div>
+          </div>
+        </div>
+
+        <!-- BEMFEB-2024 -->
+        <div id="BemFeb24" class="modal">
+          <!-- Modal content -->
+          <div class="modal-content">
+            <a class="close">&times;</a>
+            <div >
+              <iframe src="./Articles/newsletterfebruary2024.html"></iframe>
+            </div>
+          </div>
+        </div>
+
+        <!-- BEMMAR-2024 -->
+        <div id="BemMar24" class="modal">
+          <!-- Modal content -->
+          <div class="modal-content">
+            <a class="close">&times;</a>
+            <div >
+              <iframe src="./Articles/newslettermarch2024.html"></iframe>
+            </div>
+          </div>
+        </div>
+
+         <!-- BDTENE-2024 -->
+         <div id="Bdt1" class="modal">
+          <!-- Modal content -->
+          <div class="modal-content">
+            <a class="close">&times;</a>
+            <div >
+              <iframe src="./Articles/QuarterlyDigitalNewsletterJanuary2024.html"></iframe>
+            </div>
+          </div>
+        </div>
+
+        <!-- BST CATALOG -->
+        <div id="BSTCat" class="modal">
+          <!-- Modal content -->
+          <div class="modal-content">
+            <a class="close">&times;</a>
+            <div >
+              <iframe src="./Articles/BSTCatalog.html"></iframe>
+            </div>
+          </div>
+        </div>
+
+        <!-- ART1 -->
+        <div id="Art1" class="modal">
+          <!-- Modal content -->
+          <div class="modal-content">
+            <a class="close">&times;</a>
+            <div >
+              <iframe src="./Articles/Article1.html"></iframe>
+            </div>
+          </div>
+        </div>
+
+        <!-- ART2 -->
+        <div id="Art2" class="modal">
+          <!-- Modal content -->
+          <div class="modal-content">
+            <a class="close">&times;</a>
+            <div >
+              <iframe src="./Articles/Article2.html"></iframe>
+            </div>
+          </div>
+        </div>
+
+     </article>
+<!-- SECTION VIDEOS -->
+<section>
+  <h2 style="font-size: 2rem" ><span style="color: #e30613;">BST</span> VIDEOS</h2>
+  <br>
+  <div class="videosection" >
+    <div>
+      <div style="width: 500px; height: 461.25px; float: none; clear: both; margin: 2px auto;">
+        <h3 style="text-align: center;" >BST SALES FORCE PROGRAM</h3>
+        <video controls controlslist="nodownload noremoteplayback noplaybackrate foobar" width="250" nodownload src="/assets/video/BSTPortal SALES FORCE PROGRAM.mp4"></video>
+      </div>
+    <div>
+    </div>
+    </div>
+    <div>
+      <div style="width: 500px; height: 461.25px; float: none; clear: both; margin: 2px auto;">
+        <h3 style="text-align: center;" >BST MARKETING SERVICES</h3>
+        <video controls controlslist="nodownload noremoteplayback noplaybackrate foobar" width="250" nodownload src="/assets/video/BST Marketing Services.mp4"></video>
+      </div>
+    </div>
+  </div>
+</section>
+
+    </section>
+
+<footer class="footer">
+        <div class="footermobile" >
+         <h3 style="text-align: center; color: white;" >Contact Us</h3>
+         <address class="footer__info-data">
+             <div>
+                <i class='bx bxs-map' style=" font-size: 2rem; color: white;"></i>
+                 <span style="color: rgb(255, 255, 255);" ><br>
+                   <b style="color:#e30613;">BST</b><b style="color: white;" >GLOBAL TRADE CORPORATION</b>
+                  <br>1910 THOMES AVENUE
+                   <br>CHEYENNE WY 82001
+                   <br> +1(307) 620-3067 <i class="em em-flag-um" aria-role="presentation" aria-label="U.S. Outlying Islands Flag"></i>  USA
+                 </span>
+             </div>
+           <div >
+             <i class='bx bx-envelope' style=" font-size: 2rem;color: white; " ></i>
+             <span class="footer__info-mail"><br>
+             <a id="mail" href="mailto:marketing@bstportal.com?subject=Questions">marketing@bstportal.com</a>
+             </span>
+           </div>
+           <div >
+             <i class='bx bx-world' style=" font-size: 2rem; color: white;" ></i>
+             <span class="footer__info-mail"><br>
+             <a href="http://www.bstportal.com/">www.bstportal.com</a><br>
+             <i class='bx bxl-facebook' style="color: white;" ></i><br>
+             <a href="https://www.facebook.com/profile.php?id=61550079221810&locale=es_LA">Facebook</a>
+             <br>
+             <i class="bx bxl-linkedin" style="color: white;" ></i><br>
+             <a href="https://www.linkedin.com/company/bstportal-com">Linkedin</a>
+             </span>
+           </div>
+         </address>
+         <p style="font-size: small; text-align: center; color: white;">Copyright © BSTPortal.com All Rights Reserved</p>
+        </div>
+</footer>
+
+<script src="/assets/js/components/modals.js" ></script>
+<script src="/assets/js/components/downloads.js" ></script>
+<script src="/assets/js/components/modals/ebook3.js" ></script>
+<script src="/assets/js/components/modals/ebook4.js" ></script>
+<script src="/assets/js/components/modals/bem1.js" ></script>
+<script src="/assets/js/components/modals/bem2.js" ></script>
+<script src="/assets/js/components/modals/bem3.js" ></script>
+<script src="/assets/js/components/modals/bem4.js" ></script>
+<script src="/assets/js/components/modals/bem5.js" ></script>
+<script src="/assets/js/components/modals/bdt1.js" ></script>
+<script src="/assets/js/components/modals/catalog.js" ></script>
+<script src="/assets/js/components/modals/art1.js" ></script>
+<script src="/assets/js/components/modals/art2.js" ></script>
+<script src="/assets/js/book.js"></script>
+<script>
+    function filtcat(c) {
+      var x = document.getElementById("todo");
+      var y = x.querySelectorAll("div");
+      var i,c;
+      for (i = 0; i < y.length; i++) {
+      if (y[i].className == c || c == 'all') {y[i].style.display = "inline-block"}
+      else {y[i].style.display = "none"}
+      }
+      console.log(c)
+      }
+  </script>
+<script type="text/javascript">
+  function confirm_alert(node) {
+  return confirm("Welcome, valued BST member, you will be redirected to the login at BSTPortal.com; We are currently working on a new framework to provide you with a better and efficient platform.");
+  }
+  </script>
+
+</body>
+</html>

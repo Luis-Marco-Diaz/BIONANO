@@ -781,15 +781,8 @@ img{
 
   .carrusel{
 
-    display: grid; 
-
-      grid-auto-rows: 1fr; 
-
-      grid-template-columns: 1fr; 
-
-      gap: 1px 1px;
-
-      margin: 15px;
+    display: flex;
+    flex-direction: column;
 
   }
 

@@ -776,7 +776,7 @@ background-position: top;
 
 display: grid;
 
-grid-template-columns: 1fr 2fr;
+grid-template-columns: 1fr 1fr;
 
 grid-template-rows: minmax(0, auto);
 
@@ -787,6 +787,8 @@ align-items: center;
 box-sizing: border-box;
 
 padding: 20px;
+
+max-width: 1500px;
 
 }
 
@@ -900,9 +902,9 @@ color: #000000;
 
 .img_cards {
 
-min-width: 250px;
+min-width: 300px;
 
-max-width: 300px;
+max-width: 350px;
 
 }
 
@@ -914,7 +916,7 @@ font-size: var(--smaller-font-size);
 
 min-width: 300px;
 
-max-width: 370px;
+max-width: 350px;
 
 max-height: 500px;
 

@@ -524,7 +524,7 @@ max-height: 450px;
 
 .HomeH1 {
 
-font-size: 350%;
+font-size: 250%;
 
 width: 650px;
 
@@ -901,9 +901,7 @@ color: #000000;
 }
 
 .img_cards {
-
 min-width: 300px;
-
 max-width: 350px;
 
 }
@@ -919,8 +917,6 @@ min-width: 300px;
 max-width: 350px;
 
 max-height: 500px;
-
-background-color: #ffffff;
 
 padding: 1rem;
 
@@ -938,7 +934,7 @@ transition: 0.5s;
 
 .card_img:hover {
 
-background-color: rgba(7, 147, 241, 0.387);
+background-color: rgba(7, 136, 241, 0.387);
 
 transform: scaleY(1.1) scaleX(1.1);
 
@@ -1488,11 +1484,24 @@ margin-top: 50px;
 
 }
 
+/* ============= Form ============= */
+
+form{
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  padding: 2%;
+  background-color: #383838;
+  box-shadow: 11px 10px 42px -17px rgba(0,0,0,0.75);
+  border-radius: 5px;
+}
+.form_label{
+  text-align: left;
+  padding-top: 1%;
+}
 
 
 /* ============= Footer ============= */
-
-
 
 .footer {
 

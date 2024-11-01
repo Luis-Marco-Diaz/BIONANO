@@ -3,7 +3,9 @@
 <html lang="es">
 
 <head>
-
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
   <!-- Google tag (gtag.js) -->
@@ -42,9 +44,7 @@
     <meta charset="UTF-8">
 
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="Autor" content="FrontEnd Developer Luis Marco Díaz">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -55,6 +55,7 @@
 
     <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="./assets/css/style.css">
 
     <link rel="stylesheet" href="./assets/css/modal.css">
@@ -66,9 +67,12 @@
     <link href="https://emoji-css.afeld.me/emoji.css" rel="stylesheet">
 
     <title>BST GLOBAL TRADE</title>
-
+<!-- STYLE-->
     <style>
 
+h3{
+  font-size: 25px;
+}
 .cards {
   display: flex;
     flex-wrap: wrap;
@@ -526,7 +530,6 @@ li {
 
 </head>
 
-   
 
 <body >
 
@@ -538,7 +541,7 @@ li {
 
   <!-- End Google Tag Manager (noscript) -->
 
-    <header class="header">
+<header class="header">
 
         <nav class="navbar">
 
@@ -629,10 +632,9 @@ li {
 
   <!-- End Meta Pixel Code -->
 
-    </header>
-
-
-    <section id="home" class="home_regis">
+</header>
+<!-- HOME (noscript) -->
+<section id="home" class="home_regis">
 
         <div class="regishome">
 
@@ -2468,9 +2470,9 @@ li {
 
            </div>
 
-    </section>
+</section>
 
-
+<!-- BODY -->
 <section style="background-color: whitesmoke;" >
    
   <div class="about_container_problem" style="justify-items: center; background-color: whitesmoke;" >
@@ -2490,7 +2492,7 @@ li {
   </div>
 
 <!-- About Us -->
-    <div class="inline__container" id="about" style="padding-top: 0px;" >
+    <div class="inline__container" id="about">
       <h2 style="font-size: 30px; color: #000; ">QUIENES SOMOS</h2>
      <div>
           <div>
@@ -2561,17 +2563,22 @@ li {
     </div>
 
 <!-- Services 1 -->
-    <div class="inline__container" id="service" >
+    <div class="inline__container" id="service" style="padding: 5% 5%;" >
         <h2 style="font-size: 30px;color: #000; ">NUESTROS SERVICIOS</h2>
     </div>
 
+    <!-- Services 2 -->
     <div class="about_container_problem" style="justify-items: center;" >
       <div >
-        <img width="600px" src="./assets/img/Automatización.svg" alt="image">
+        <img class="img_box" width="600px" src="./assets/img/Automatización.svg" alt="image">
     </div>
       <div class="interrogants_text">
         <h3 style="color: #000; " >Automatización de Procesos</h3>
         <p style="font-size: 20px; text-align: justify; color: #000; ">Implementamos Metodologías de gestión empresarial con ERP para automatizar tareas cotidianas, lo que optimiza el uso de recursos, reduce errores, y permite a las empresas enfocarse en actividades estratégicas y de mayor valor.</p>
+        <div class="inline__container" >
+          <script src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs" type="module"></script>
+            <dotlottie-player src="https://lottie.host/2727fe62-99e8-43e3-8ecd-62d2f2b997fe/DGgTHAwVpx.json" background="transparent" speed="1" style="width: 300px; height: 300px;" loop autoplay></dotlottie-player>
+        </div>
       </div>
     </div>
     
@@ -2580,19 +2587,27 @@ li {
 <div class="interrogants_text">
   <h3 style="color: #000; " >Mercadotecnia Digital Personalizada</h3>
   <p style="font-size: 20px; text-align: justify; color: #000; ">Nuestras estrategias de marketing digital están diseñadas para alcanzar a tu audiencia de manera efectiva. Utilizamos herramientas como SEO, publicidad segmentada y contenido relevante para maximizar la conversión de clientes potenciales y asegurar un ROI significativo.</p>
+  <div class="inline__container">
+    <script src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs" type="module"></script> 
+
+    <dotlottie-player src="https://lottie.host/ba2dd3fb-694c-42e4-bf53-0a35795a24ee/sBZ0rsqztP.json" background="transparent" speed="1" style="width: 350px; height: 350px;" loop autoplay></dotlottie-player>
+  </div>
 </div>
 <div>
-  <img width="600px" src="./assets/img/Digital Marketing.svg" alt="image">
+  <img class="img_box" width="600px" src="./assets/img/Digital Marketing.svg" alt="image">
 </div>
 </div>
 <!-- Services 3 -->
 <div class="about_container_problem" style="justify-items: center;" >
   <div >
-    <img width="600px" src="./assets/img/Inventory Control.svg" alt="image">
+    <img class="img_box" width="600px" src="./assets/img/Inventory Control.svg" alt="image">
 </div>
   <div class="interrogants_text">
     <h3 style="color: #000; " >Control de Inventarios</h3>
     <p style="font-size: 20px; text-align: justify;color: #000; ">Facilitamos la gestión eficiente del inventario a través de la automatización de procesos, lo que ayuda a evitar el exceso de existencias o la falta de productos, mejorando la eficiencia operativa y reduciendo costos.</p>
+    <div class="inline__container" >
+      <img class="img_box" width="80%" src="/public_html/assets/img/Punto de Reorden BST.svg" alt="Control de Inventarios por método de punto de reorden">
+    </div>
   </div>
 </div>
 <!-- Services 4 -->
@@ -2600,19 +2615,29 @@ li {
   <div class="interrogants_text">
     <h3 style="color: #000; " >Estrategias de Pre-lanzamiento</h3>
     <p style="font-size: 20px; text-align: justify; color: #000; ">Antes de la implementación, realizamos un análisis del mercado objetivo y necesidades específicas del cliente. Definimos una estrategia clara para asegurar que todas las soluciones estén alineadas con los objetivos comerciales.</p>
+    <div class="inline__container">
+      <script src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs" type="module"></script> 
+
+      <dotlottie-player src="https://lottie.host/891c344f-ab30-43e8-b42a-157bbe882e54/5y0NicT0Zy.json" background="transparent" speed="1" style="width: 300px; height: 300px;" loop autoplay></dotlottie-player>
+    </div>
   </div>
   <div>
-    <img width="600px" src="./assets/img/Launching.svg" alt="image">
+    <img class="img_box" width="600px" src="./assets/img/Pre-Launching.svg" alt="Estrategias de Pre-lanzamiento">
   </div>
   </div>
 <!-- Services 5 -->
 <div class="about_container_problem" style="justify-items: center;" >
   <div >
-    <img width="600px" src="./assets/img/Inventory Control (2).svg" alt="image">
+    <img class="img_box" width="600px" src="./assets/img/Launching_Implementation.svg" alt="image">
 </div>
   <div class="interrogants_text">
     <h3 style="color: #000; " >Lanzamiento e Implementación</h3>
-    <p style="font-size: 20px; text-align: justify; color: #000; ">Monitoreamos en tiempo real las métricas clave y ajustamos tácticas sobre la marcha para asegurar una implementación impecable y el éxito desde el primer momento.</p>
+    <p style="font-size: 20px; text-align: justify; color: #000; ">Monitoreamos en tiempo real las métricas clave y ajustamos tácticas sobre la marcha para asegurar una implementación impecable para apuntar hacia el éxito desde el primer momento.</p>
+    <div class="inline__container" >
+      <script src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs" type="module"></script> 
+
+    <dotlottie-player src="https://lottie.host/4cf31e8d-20d4-4ff0-a6fc-813610a84fc3/IkO2fv9vQY.json" background="transparent" speed="1" style="width: 300px; height: 300px;" loop autoplay></dotlottie-player>
+    </div>
   </div>
 </div>
 <!-- Services 6 -->
@@ -2620,31 +2645,62 @@ li {
   <div class="interrogants_text">
     <h3 style="color: #000; " >Optimización Continua</h3>
     <p style="font-size: 20px; text-align: justify; color: #000; ">Una vez implementadas las soluciones, llevamos a cabo un monitoreo continuo para optimizar el rendimiento y hacer ajustes estratégicos que maximicen el ROI y el impacto a largo plazo.</p>
+    <div class="inline__container" >
+      <script src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs" type="module"></script> 
+
+    <dotlottie-player src="https://lottie.host/0d7743bf-b36f-4706-b310-09fcc1de7fa6/32Fayeb0DC.json" background="transparent" speed="1" style="width: 300px; height: 300px;" loop autoplay></dotlottie-player>
+    </div>
   </div>
   <div>
-    <img width="600px" src="./assets/img/Launching (2).svg" alt="image">
+    <img class="img_box" width="600px" src="./assets/img/Optimization.svg" alt="image">
   </div>
   </div>
 <!-- Services 7 -->
 <div class="about_container_problem" style="justify-items: center;" >
   <div >
-    <img width="600px" src="./assets/img/Customer Sucess.svg" alt="image">
+    <img class="img_box" width="600px" src="./assets/img/Customer Sucess.svg" alt="image">
 </div>
   <div class="interrogants_text">
-    <h3 style="color: #000; " >Asesoría Personalizada y Soporte</h3>
-    <p style="font-size: 20px; text-align: justify; color: #000; ">Ofrecemos atención personalizada con un enfoque estratégico para ayudar a nuestros clientes a expandir sus negocios de manera sostenible. Proveemos un seguimiento cercano y optimización constante de las soluciones implementadas.</p>
+    <h3 style="color: #000; " >Mentoría y acompañamiento personalizado</h3>
+    <p style="font-size: 20px; text-align: justify; color: #000; ">Ofrecemos un acompañamiento personalizado con un enfoque estratégico para ayudar a nuestros clientes a expandir sus negocios de manera sostenible. Proveemos un seguimiento cercano y optimización constante de las soluciones implementadas.</p>
+    <div class="inline__container" >
+      <script src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs" type="module"></script> 
+
+      <dotlottie-player src="https://lottie.host/f3523805-3277-4a99-bce3-20382a6ed31f/9UID9Ck2vi.json" background="transparent" speed="1" style="width: 300px; height: 300px;" loop autoplay></dotlottie-player>
+    </div>
   </div>
 </div>
 
 
 </section>
-
-
-
-
-
-
-    <footer class="footer">
+<!-- BRANDS -->
+<section>
+  <div class="inline__container" style="padding: 3% 2%; background-color: whitesmoke;" >
+    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img class="d-block w-100" src="/public_html/assets/img/Inventory Control (2).svg" alt="First slide">
+        </div>
+        <div class="carousel-item">
+          <img class="d-block w-100" src="/public_html/assets/img/Inventory Control (2).svg" alt="Second slide">
+        </div>
+        <div class="carousel-item">
+          <img class="d-block w-100" src="/public_html/assets/img/Inventory Control (2).svg" alt="Third slide">
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+  </div>
+</section>
+<!-- FOOTER -->
+<footer class="footer">
 
    <div class="footermobile" >
 
@@ -2710,12 +2766,7 @@ li {
 
    </div>
 
-    </footer>
-
-
-
-
-
+</footer>
 
 
   <script type="text/javascript">
@@ -3013,7 +3064,6 @@ li {
         smartlook('init', 'c0fe69ce74405ba430e992a4e16da4c4a069f2ce', { region: 'eu' });
 
   </script>
-
 
 
 

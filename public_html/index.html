@@ -47,7 +47,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="Autor" content="FrontEnd Developer Luis Marco Díaz">
-
+    <link rel="preload" href="./assets/img/BSTGLOBALWORLD.png" as="image" >
     <link rel="preconnect" href="https://fonts.googleapis.com">
 
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -117,26 +117,6 @@ h3{
 
 }
 
-.home_regis2{
-
-  background-image: url(./assets/img/World_dark_BS.png);
-
-  height: 1000px;
-
-  /* Create the parallax scrolling effect */
-
-  background-attachment: fixed;
-
-  background-repeat: no-repeat;
-
-  background-size: contain;
-
-  background-position: center;
-
-  background-color: #000000;
-
-}
-
 .regishome{
 
   display: flex;
@@ -181,10 +161,6 @@ h3{
 
   margin-top: 3%;
 
-}
-
-.back{
-  background-image: url(./assets/img/Conection-world-Landing-Body2.png);
 }
 
 
@@ -2502,7 +2478,7 @@ li {
 
 <!-- About Us -->
     <div class="inline__container" id="about">
-      <h2 style="font-size: 30px; color: #000; ">QUIENES SOMOS</h2>
+      <h2 style="font-size: 30px; color: #000; font-weight: bold; ">QUIENES SOMOS</h2>
      <div>
           <div>
              <p style="text-align: justify; font-size: 20px; color: #000; padding: 30px;" >
@@ -2511,16 +2487,16 @@ li {
           </div> 
       <div class="cards" >
           <article class="card card_img" style="padding: 0;" >
-            <img class="img_cards" src="./assets/img/Cards/BST_Lanzamiento.png">
+            <img class="img_cards"  loading="lazy" src="./assets/img/Cards/BST_Lanzamiento.png">
         </article><!-- /card-one -->
 
         <article class="card card_img" style="padding: 0;" >
           
-          <img class="img_cards" src="./assets/img/Cards/BST_Consolidacion.png">
+          <img class="img_cards" loading="lazy" src="./assets/img/Cards/BST_Consolidacion.png">
       </article><!-- /card-two -->
 
       <article class="card card_img" style="padding: 0;" >
-        <img class="img_cards" src="./assets/img/Cards/BST_Expansión.png">
+        <img class="img_cards" loading="lazy" src="./assets/img/Cards/BST_Expansión.png">
     </article><!-- /card-three -->
       </div>
       <div>
@@ -2579,7 +2555,7 @@ li {
 
     <div class="about_container_problem" style="justify-items: center;" >
       <div >
-        <img class="img_box" width="600px" src="./assets/img/ServicesImg/Automatizacion.png" alt="image">
+        <img class="img_box" width="600px" loading="lazy" src="./assets/img/ServicesImg/Automatizacion.png" alt="image">
     </div>
       <div class="interrogants_text">
         <h3 style="color: #000; font-weight: bold; " >Automatización de Procesos</h3>
@@ -2603,19 +2579,19 @@ li {
   </div>
 </div>
 <div>
-  <img class="img_box" width="600px" src="./assets/img/ServicesImg/MarketingDigital.png" alt="image">
+  <img class="img_box" width="600px" loading="lazy" src="./assets/img/ServicesImg/MarketingDigital.png" alt="image">
 </div>
 </div>
 <!-- Services 3 -->
 <div class="about_container_problem" style="justify-items: center;" >
   <div >
-    <img class="img_box" width="600px" src="./assets/img/ServicesImg/ControldeInventarios.png" alt="image">
+    <img class="img_box" width="600px" loading="lazy" src="./assets/img/ServicesImg/ControldeInventarios.png" alt="image">
 </div>
   <div class="interrogants_text">
     <h3 style="color: #000; font-weight: bold; " >Control de Inventarios</h3>
     <p style="font-size: 20px; text-align: justify;color: #000; ">Facilitamos la gestión eficiente del inventario a través de la automatización de procesos, lo que ayuda a evitar el exceso de existencias o la falta de productos, mejorando la eficiencia operativa y reduciendo costos.</p>
     <div class="inline__container" >
-      <img class="img_box" width="80%" src="./assets/img/ServicesImg/Punto de Reorden BST.png" alt="Control de Inventarios por método de punto de reorden">
+      <img class="img_box" width="80%" loading="lazy" src="./assets/img/ServicesImg/Punto de Reorden BST.png" alt="Control de Inventarios por método de punto de reorden">
     </div>
   </div>
 </div>
@@ -2631,13 +2607,13 @@ li {
     </div>
   </div>
   <div>
-    <img class="img_box" width="600px" src="./assets/img/ServicesImg/Pre-lanzamiento.png">
+    <img class="img_box" width="600px" loading="lazy" src="./assets/img/ServicesImg/Pre-lanzamiento.png">
   </div>
   </div>
 <!-- Services 5 -->
 <div class="about_container_problem" style="justify-items: center;" >
   <div >
-    <img class="img_box" width="600px" src="./assets/img/ServicesImg/Implementacion.png" alt="image">
+    <img class="img_box" width="600px" loading="lazy" src="./assets/img/ServicesImg/Implementacion.png" alt="image">
 </div>
   <div class="interrogants_text">
     <h3 style="color: #000; font-weight: bold;" >Lanzamiento e Implementación</h3>
@@ -2661,13 +2637,13 @@ li {
     </div>
   </div>
   <div>
-    <img class="img_box" width="600px" src="./assets/img/ServicesImg/Optimizacion.png" alt="image">
+    <img class="img_box" width="600px" loading="lazy" src="./assets/img/ServicesImg/Optimizacion.png" alt="image">
   </div>
   </div>
 <!-- Services 7 -->
 <div class="about_container_problem" style="justify-items: center;" >
   <div >
-    <img class="img_box" width="600px" src="./assets/img/ServicesImg/Mentoria.png" alt="image">
+    <img class="img_box" width="600px" loading="lazy" src="./assets/img/ServicesImg/Mentoria.png" alt="image">
 </div>
   <div class="interrogants_text">
     <h3 style="color: #000; font-weight: bold; " >Mentoría y acompañamiento personalizado</h3>
@@ -2691,13 +2667,13 @@ li {
     <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
       <div class="carousel-inner">
         <div class="carousel-item active">
-           <a href="./pages/BIONANO.html" style="cursor: url(./assets/img/cursor.svg),auto;" ><img class="d-block w-100" src="./assets/img/Carrusel/Bionano.png" alt="First slide"></a> 
+           <a href="./pages/BIONANO.html" style="cursor: url(./assets/img/cursor.svg),auto;" ><img class="d-block w-100" loading="lazy" src="./assets/img/Carrusel/Bionano.png" alt="First slide"></a> 
         </div>
         <div class="carousel-item">
-          <a href="https://bstportal.com/bstworldtrade/default.php" style="cursor: url(./assets/img/cursor.svg),auto;" > <img class="d-block w-100" src="./assets/img/Carrusel/BSTWorldTradeExpo.png" alt="Second slide"> </a> 
+          <a href="https://bstportal.com/bstworldtrade/default.php" style="cursor: url(./assets/img/cursor.svg),auto;" > <img class="d-block w-100" loading="lazy" src="./assets/img/Carrusel/BSTWorldTradeExpo.png" alt="Second slide"> </a> 
         </div>
         <div class="carousel-item">
-           <a href="https://bstportal.com/" style="cursor: url(./assets/img/cursor.svg),auto;" > <img class="d-block w-100" src="./assets/img/Carrusel/BSTPortal.png" alt="Third slide"> </a>
+           <a href="https://bstportal.com/" style="cursor: url(./assets/img/cursor.svg),auto;" > <img class="d-block w-100" loading="lazy" src="./assets/img/Carrusel/BSTPortal.png" alt="Third slide"> </a>
         </div>
       </div>
       <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">

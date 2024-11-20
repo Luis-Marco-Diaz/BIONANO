@@ -35,8 +35,8 @@ var myBarChart = new Chart(ctx, {
     labels: ["Negocio", "Ventas", "Comunicación", "Benchmarking", "SEO", "Atn al Cliente","Proceso de Ventas", "UX/UI", "Ranking"],
     datasets: [{
       label: "",
-      backgroundColor: "#4e73df",
-      hoverBackgroundColor: "#2e59d9",
+      backgroundColor: ["#0c8d05", "#ffde59", "#ffde59", "#eb0000", "#eb0000", "#0c8d05", "#eb0000", "#eb0000", "#eb0000" ],
+      hoverBackgroundColor: "#575757",
       borderColor: "#4e73df",
       data: [10, 5, 3, 1, 1, 9, 1,1,1],
     }],

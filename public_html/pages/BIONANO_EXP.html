@@ -21,6 +21,9 @@
     <link href="../assets/css/sb-admin-2.min.css" rel="stylesheet">
     <link href="../assets/css/sb-admin-2.css" rel="stylesheet">
 
+    <style>
+        .in_card{background-color: rgb(255, 255, 255); border-radius: 3px; padding: 1%; }
+    </style>
 </head>
 
 <body id="page-top">
@@ -59,7 +62,7 @@
 
             <!-- Nav Item - ERP Collapse Menu -->
             <li class="nav-item">
-                <a class="nav-link bg-gray-800 " href="../pages/BIONANO_ERP.html">
+                <a class="nav-link" href="../pages/BIONANO_ERP.html">
                     <i class="fas fa-fw fa-cog active"></i>
                     <span>Integración con ERP</span>
                 </a>
@@ -74,7 +77,7 @@
 
             <!-- Nav Item - Charts -->
             <li class="nav-item">
-                <a class="nav-link" href="../pages/BIONANO_EXP.html">
+                <a class="nav-link bg-gray-800" href="../pages/BIONANO_EXP.html">
                     <i class="fas fa-fw fa-chart-area"></i>
                     <span>Plan de Expansión</span></a>
             </li>
@@ -194,10 +197,43 @@
 
                     <!-- Page Heading -->
                     <div class="d-sm-flex align-items-center justify-content-between mb-4">
-                        <h1 class="h3 mb-0 text-gray-900">INTEGRACIÓN CON EL ERP DE ODOO</h1>
+                        <h1 class="h3 mb-0 text-gray-900">PLAN DE EXPANSIÓN COMERCIAL</h1>
                     </div>
                     <div>
-                        <h5>Fases de implementación del proyecto y duraciones relativas:</h5>
+                        <h5 class="text-gray-900" >ECreación del plan de comercialización en línea, abarcando los aspectos más importantes para el posicionamiento de los productos en el entorno digital por medio de comercialización B2C y B2B. </h5>
+                        <br>
+                        <div class="container-fluid" >
+                            <div class="container text-gray-900 " >
+                                <div class="row " style="gap: 30px;">
+                                  <div class="col in_card" >
+                                    <h5><b>Comercio B2C</b></h5>
+                                    <ul>
+                                        <li>Estructura del Sitio Web con funcionalidades de Comercio Electrónico.</li>
+                                        <li>Organización del proceso de logística y entrega.</li>
+                                        <li>Aplicación de metodologías de control de inventarios (Punto de Reorden).</li>
+                                        <li>Vinculación con CRM, Marketing Automatizado y Chatbots en vivo.</li>
+                                    </ul>
+                                    <div>
+                                        <script src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs" type="module"></script>
+                                        <dotlottie-player src="https://lottie.host/b53b95d4-e6cb-4486-a400-7181d2898386/Ip5Rcia4Y6.lottie" background="transparent" speed="1" style="width: 200px; height: 200px" loop autoplay></dotlottie-player>
+                                    </div>
+                                  </div>
+                                  <div class="col in_card"  >
+                                    <h5><b>Comercio B2B</b></h5>
+                                    <ul>
+                                        <li>Creación del programa de ASOCIADOS y REFERENCIADOS.</li>
+                                        <li>Determinación de los costos generales y precios de venta máximos y minimos para asegurar utilidades.</li>
+                                        <li>Programación Especializada para la determinación de precios dinámica (Herramienta única en el mercado).
+                                        </li>
+                                        <li>Implementación del modelo de venta y prospección abarcando toda la República Mexicana.</li>
+                                    </ul>   
+                                  </div>
+                                  
+                                </div>
+                              </div>
+                        </div>
+                        <br>
+                        <hr>
                         <br>
                     </div>
 
@@ -210,72 +246,25 @@
                         
                         <div class="card shadow mb-4">
                             <div class="card-header py-3">
-                                <h6 class="m-0 font-weight-bold text-primary">Fases de Implementación</h6>
+                                <h6 class="m-0 font-weight-bold text-primary">Gráfica de evaluación inicial del cliente, de los cuales se obtuvo el siguiente resultado:</h6>
                             </div>
-                            <div class="card-body">
-                            <div class="table-responsive">
-                                     <div id="dataTable_wrapper" class="dataTables_wrapper dt-bootstrap4">
-                                        <div class="row">
-                                            </div>
-                                                <div class="row">
-                                                    <div class="col-sm-12">
-                                                        <table class="table table-bordered dataTable" id="dataTable" width="100%" cellspacing="0" role="grid" aria-describedby="dataTable_info" style="width: 100%;">
-                                                    <thead>
-                                                        <tr role="row">
-                                                            <th class="sorting" tabindex="0" aria-controls="dataTable" rowspan="1" colspan="1" aria-label="Fase: activate to sort column ascending" style="width: 56.3333px;">Fase</th>
-                                                            <th class="sorting" tabindex="0" aria-controls="dataTable" rowspan="1" colspan="1" aria-label="Position: activate to sort column ascending" style="width: 61.3333px;">Tiempo</th>
-                                                            <th class="sorting" tabindex="0" aria-controls="dataTable" rowspan="1" colspan="1" aria-label="Office: activate to sort column ascending" style="width: 49.3333px;">Meta</th>
-                                                        </tr>
-                                                    </thead>
-                                                    
-                                                    <tbody>
-                                                    
-                                                    <tr class="odd">
-                                                        <td class="">Análisis</td>
-                                                        <td class="">10%</td>
-                                                        <td>Análisis de ROI, fases y presupuesto.</td>
-                                                    </tr>
-                                                    <tr class="odd">
-                                                        <td class="">Kick-Off</td>
-                                                        <td class="">5%</td>
-                                                        <td>Alinear a las partes interesadas en la metodología
-                                                            + capacitación estándar.</td>
-                                                     </tr>
-                                                     <tr class="odd">
-                                                        <td class="">Implementación</td>
-                                                        <td class="">80%</td>
-                                                        <td>Serie de ciclos: Análisis, Desarrollo,
-                                                            Validación, Capacitación de Usuarios clave, Testing.</td>
-                                                    </tr>
-                                                    <tr class="odd">
-                                                        <td class="">Producción (En vivo)</td>
-                                                        <td class="">5%</td>
-                                                        <td>Lanzamiento al Mercado, Pruebas Piloto, Capacitación de Usuarios finales, corrección de errores.</td>
-                                                    </tr>
-                                                    <tr class="odd">
-                                                        <td class="">Desarrollos Consiguientes</td>
-                                                        <td class="">Variable</td>
-                                                        <td>Ampliación del Alcance, y Desarrollos personalizados.</td>
-                                                    </tr>
-
-                                                
-                                                </tbody>
-                                                </table>
-                                                <br>
-                                            </div>
-                                        </div>
-                                         </div>
+                            <!-- Bar Chart -->
+                            <div class="card shadow mb-4">
                                 
-                            </div>
+                                <div class="card-body">
+                                    <div class="chart-bar">
+                                        <canvas id="myBarChart"></canvas>
+                                    </div>
+                                </div>
                             </div>
                         </div>
 
                         <div class="card shadow mb-4">
                             <div class="card-header py-3">
-                                <h6 class="m-0 font-weight-bold text-primary">Aplicaciones de Odoo Instaladas en el Proyecto</h6>
+                                <h6 class="m-0 font-weight-bold text-primary">Enfoque en la Optimización del plan de Mercadotecnia</h6>
                             </div>
-                            <div class="card-body">
-                                <img class="img-fluid" src="../assets/img/BIONANO/Odoo Aps.png" alt="Aplicaciones de Odoo Instaladas">
+                            <div class="card-body" style="display: flex; justify-content: center;" >
+                                <img class="img-fluid" src="../assets/img/BIONANO/PlanDeMarketing.png" alt="Plan de Mejora en Mercadotecnia">
                             </div>
                         </div>
                         
@@ -344,6 +333,7 @@
     <!-- Page level custom scripts -->
     <script src="../assets/js/components/chart-area-demo.js"></script>
     <script src="../assets/js/components/chart-pie-demo.js"></script>
+    <script src="../assets/js/components/chart-bar-demo.js"></script>
 
 </body>
 

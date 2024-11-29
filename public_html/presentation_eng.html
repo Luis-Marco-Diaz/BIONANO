@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-<html lang="es">
+<html lang="en">
 
 <head>
 
@@ -70,23 +70,23 @@
     <link rel="preload" as="image" href="https://bstportal.net/assets/img/Landing-Header_English.jpg">
    
     <title>BSTPortal.com</title>
-    <style>
 
-#above{
-  padding: 10%;
-}
+   <style>
+    iframe {
+  background-color: gray;
+  width: 100%;
+  height: 750px;
+  border: none;
 
-@media only screen and (width <= 950px) {
+      }
+    @media only screen and (max-width: 600px) {
+      .container-fluid{
+        padding-top: 40px;
+      }
+      }
+    
+   </style>
 
-#above{
-  padding-top: 80px;
-  padding-bottom: 30px;
-  padding-left: 1%;
-  padding-right: 1%;
-} 
-}
-
-    </style>
 </head>
 
    
@@ -118,34 +118,35 @@
          <ul class="navbar__list">
 
           <li class="navbar__item">
-            <a class="navbar__link" href="./index.html">INICIO</a>
+            <a class="navbar__link" href="./bstglobaltrade_eng.html">HOME</a>
           </li>
           <li class="navbar__item">
-            <a class="navbar__link" href="./index.html#about">ACERCA DE</a>
+            <a class="navbar__link" href="./bstglobaltrade_eng.html#about">ABOUT US</a>
           </li>
           <li class="navbar__item">
-            <a class="navbar__link" href="./index.html#service">SERVICIOS</a>
+            <a class="navbar__link" href="./bstglobaltrade_eng.html#service">SERVICES</a>
           </li>
           <li class="navbar__item">
-            <a class="navbar__link" href="./presentation.html">PRESENTACIÓN</a>
+            <a class="navbar__link" href="./presentation_eng.html">PRESENTATION</a>
           </li>
           <li class="navbar__item">
-            <a class="navbar__link" href="./proyects.html">PROYECTOS</a>
+            <a class="navbar__link" href="./proyects.html">PROJECTS</a>
           </li>
           <li class="navbar__item">
-            <a class="navbar__link" href="./index.html#contact">CONTACTO</a>
+            <a class="navbar__link" href="./bstglobaltrade_eng.html#contact">CONTACT</a>
           </li>
           
-          <!-- LANGUAGE -->        
-          <div class="dropdown">
-            <button class="dropbtn">IDIOMA 
-              <i class="fa fa-caret-down"></i>
-            </button>
-             <div class="dropdown-content">  
-              <a style=" background:linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./assets/img/English.png); background-size: cover; background-position: center center; background-repeat: no-repeat; text-align: center;" href="./proyects_eng.html">English</a>
-              <a style=" background:linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./assets/img/Spain_flag.png); background-size: cover; background-position: center center; background-repeat: no-repeat; text-align: center;" href="./proyects.html">Español</a>
-            </div> 
+            <!-- LANGUAGE -->        
+            <div class="dropdown">
+              <button class="dropbtn">LANGUAGE 
+                <i class="fa fa-caret-down"></i>
+              </button>
+               <div class="dropdown-content">  
+                <a style=" background:linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./assets/img/English.png); background-size: cover; background-position: center center; background-repeat: no-repeat; text-align: center;" href="./presentation_eng.html">English</a>
+                <a style=" background:linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./assets/img/Spain_flag.png); background-size: cover; background-position: center center; background-repeat: no-repeat; text-align: center;" href="./presentation.html">Español</a>
+              </div> 
 
+          </div>
         </div>
 
          </ul>
@@ -191,41 +192,17 @@ src="https://www.facebook.com/tr?id=323508163701093&ev=PageView&noscript=1"
 
 </header>
 
-<section id="above" style="background-color: whitesmoke; " class="mx-auto"  >
+<section style="background-color: whitesmoke; padding: 10%; " class="mx-auto"  >
   <div class="container-fluid"  >
-    <h2 style="color: black; text-align: center; font-weight: bold;" >SELECCIONE UN PROYECTO PARA ACCEDER AL TABLERO DE CONTROL</h1>
-      <br>
-  </div>
-
-  <div class="container-fluid">
-    <div class="row" style="gap: 15px;" >
-      <div class="col-sm">
-           <div class="card bg-dark" style="align-items: center;" >
-           <img src="./assets/img/Carrusel/BSTportal_dashboard.png" class="card-img-top " alt="BSTPortal.com">
-            <div class="card-body">
-            <a href="https://bstportal.net/" class="btn btn-primary">BSTPortal</a>
-            </div>
-          </div>
-      </div>
-      <div class="col-sm">
-        <div class="card bg-dark" style="align-items: center;" >
-          <img src="./assets/img/Carrusel/BIONANO_ERP.png" class="card-img-top" alt="BSTPortal.com">
-           <div class="card-body">
-           <a href="./pages/BIONANO.html" class="btn btn-primary">BIONANO Dashboard</a>
-           </div>
-         </div>
-      </div>
-      <div class="col-sm">
-        <div class="card bg-dark " style="align-items: center;" >
-          <img src="./assets/img/Carrusel/WorldTradeExpo.png" class="card-img-top" alt="BSTPortal.com">
-           <div class="card-body">
-           <a href="https://bstportal.com/bstworldtrade/default.php" class="btn btn-primary">BSTWorldTradeExpo</a>
-           </div>
-         </div>
-      </div>
+    <div>
+      <iframe src="./assets/doc/BST_GLOBAL_TRADE_SERVICIOS.pdf" type="document"></iframe>
     </div>
+      <br>
+      <div class=" inline__container " >
+        <a class="btn " style="background-color: #e30613; color: white; font-size: 20px; " href="https://drive.google.com/file/d/13vfHvgd-8TKsszFifmSNfSl-p3R06F5N/view?usp=drive_link" target="_blank" >Download Presentation</a>
+      </div>
+      
   </div>
-
 </section>
 
 
@@ -235,7 +212,7 @@ src="https://www.facebook.com/tr?id=323508163701093&ev=PageView&noscript=1"
 
   <div class="footermobile" >
 
-   <h3 style="text-align: center;" >CONTACTO</h3>
+   <h3 style="text-align: center;" >CONTACT</h3>
 
    <address class="footer__info-data">
 
@@ -246,7 +223,7 @@ src="https://www.facebook.com/tr?id=323508163701093&ev=PageView&noscript=1"
            <span><br>
 
              <b style="color:#e30613;">BST</b> <b>GLOBAL TRADE CORPORATION</b>
-             <br>Ciudad de México, México
+             <br> Mexico City
              <br> +1(307) 620-3067 <i class="em em-flag-um" aria-role="presentation" aria-label="U.S. Outlying Islands Flag"></i>  USA
              <br> +(52) 56 1864-7682 <i class="em em-flag-mx" aria-role="presentation" aria-label="BIRD"></i>  MX
 
@@ -272,7 +249,7 @@ src="https://www.facebook.com/tr?id=323508163701093&ev=PageView&noscript=1"
 
        <span class="footer__info-mail"><br>
 
-       <a href="http://www.bstportal.com/">www.bstportal.com</a><br>
+       <a href="http://www.bstportal.net/">www.bstportal.com</a><br>
 
        <i class='bx bxl-facebook'></i><br>
 
@@ -290,7 +267,7 @@ src="https://www.facebook.com/tr?id=323508163701093&ev=PageView&noscript=1"
 
    </address>
 
-   <p style="font-size: small; text-align: center;">Copyright © BSTPortal.com All Rights Reserved</p>
+   <p style="font-size: small; text-align: center;">Copyright © BST GLOBAL TRADE CORPORATION All Rights Reserved</p>
 
   </div>
 

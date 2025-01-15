@@ -247,8 +247,7 @@ h3{
 
 /* The Close Button */
 
-.close {
-
+.close, .close2, .close3 {
   color: #ffffff;
   float: right;
   font-size: 32px;
@@ -257,9 +256,9 @@ h3{
 
 
 
-.close:hover,
+.close,.close2,.close3:hover,
 
-.close:focus {
+.close,.close2,.close3:focus {
 
   color: #ff0000;
 
@@ -679,11 +678,10 @@ li {
 
            </div>
 
-
+<!-- MODALS -->
            <div >
-
               <div>
-                  <!-- Modal-Launching -->
+                  <!-- Modal 1 - Launching -->
                   <div id="myModal" class="modal">
 
                     <!-- Modal content -->
@@ -704,6 +702,41 @@ li {
 
                   </div>
               </div>
+
+              <div>
+                <!-- Modal 2 - Expansion -->
+                <div id="myModal2" class="modal">
+
+                  <!-- Modal content -->
+
+                  <div class="modal-content">
+
+                    <span class="close2">&times;</span>
+
+                    <section id="form" >
+
+                      <iframe class="modal-content" src="./expansion.html" frameborder="0"></iframe>
+
+                    </section>
+
+                  </div>
+
+                </div>
+            </div>
+
+            <div>
+              <!-- Modal 3 -Consolidation -->
+              <div id="myModal3" class="modal">
+                <!-- Modal content -->
+                <div class="modal-content">
+                  <span class="close3">&times;</span>
+                  <section id="form" >
+                    <iframe class="modal-content" src="./consolidation.html" frameborder="0"></iframe>
+                  </section>
+                </div>
+
+              </div>
+          </div>
 
            </div>
 
@@ -755,11 +788,11 @@ li {
         </article><!-- /card-one -->
 
         <article class="card card_img" style="padding: 0;" >
-          <a href=""><img class="img_cards" loading="lazy" src="./assets/img/Cards/BST_Expan.png"></a>
+          <a style="cursor: pointer;" id="myBtn2" onclick="openModal2()"><img class="img_cards" loading="lazy" src="./assets/img/Cards/BST_Expan.png"></a>
         </article><!-- /card-two -->
 
         <article class="card card_img" style="padding: 0;" >
-        <a href=""><img class="img_cards" loading="lazy" src="./assets/img/Cards/BST_Consolidacion.png"></a>
+        <a style="cursor: pointer;" id="Btn3m" onclick="openModal3()"><img class="img_cards" loading="lazy" src="./assets/img/Cards/BST_Consolidacion.png"></a>
         </article><!-- /card-three -->
       </div>
       
@@ -1217,25 +1250,13 @@ li {
   </script>
 
   <script>
-
-    // Get the modal
-
+// Get the modal 1
     let modal = document.getElementById("myModal");
-
-    
-
     // Get the button that opens the modal
     let btn = document.getElementById("myBtn");
-
-    
-
     // Get the <span> element that closes the modal
     let span = document.getElementsByClassName("close")[0];
-
-    
-
     // When the user clicks the button, open the modal 
-
     function openModal() {
       modal.style.display = "block";
     }
@@ -1243,7 +1264,6 @@ li {
     span.onclick = function() {
       modal.style.display = "none";
     }
-    
     // When the user clicks anywhere outside of the modal, close it
     window.onclick = function(event) {
       if (event.target == modal) {
@@ -1251,6 +1271,53 @@ li {
       }
     }
 
+  </script>
+
+    <script>
+      // Get the modal 2
+          let modal2 = document.getElementById("myModal2");
+          // Get the button that opens the modal
+          let btn2 = document.getElementById("myBtn2");
+          // Get the <span> element that closes the modal
+          let span2 = document.getElementsByClassName("close2")[0];
+          // When the user clicks the button, open the modal 
+          function openModal2() {
+            modal2.style.display = "block";
+          }
+          // When the user clicks on <span> (x), close the modal
+          span2.onclick = function() {
+            modal2.style.display = "none";
+          }
+          // When the user clicks anywhere outside of the modal, close it
+          window.onclick = function(event) {
+            if (event.target == modal) {
+              modal2.style.display = "none";
+            }
+          }
+      
+    </script>
+    <script>
+      // Get the modal 3
+          let modal3 = document.getElementById("myModal3");
+          // Get the button that opens the modal
+          let btn3 = document.getElementById("myBtn3");
+          // Get the <span> element that closes the modal
+          let span3 = document.getElementsByClassName("close3")[0];
+          // When the user clicks the button, open the modal 
+          function openModal3() {
+            modal3.style.display = "block";
+          }
+          // When the user clicks on <span> (x), close the modal
+          span3.onclick = function() {
+            modal3.style.display = "none";
+          }
+          // When the user clicks anywhere outside of the modal, close it
+          window.onclick = function(event) {
+            if (event.target == modal) {
+              modal3.style.display = "none";
+            }
+          }
+      
     </script>
 
     <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>

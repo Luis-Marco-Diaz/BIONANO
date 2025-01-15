@@ -41,6 +41,7 @@ width: 80%;
 <div style="background-color: #b60000;" >
   <h1 style="padding: 1%; color: white; " > LANZAMIENTO DE NUEVOS PROYECTOS</h1>
 </div>
+
 <form id="regForm" action="https://formspree.io/f/xayrewda" method="POST" target="https://bstportal.net/Thankyoupage.html" >
     <H1>¿Va a funcionar mi proyecto?</H1>
     <hr>
@@ -79,7 +80,7 @@ width: 80%;
       <br>
         <div class="boxcent" style="flex-direction: column;" >
 
-            <label for="lounchtype"><b style="font-size: 16px;" >¿Cuál frase describe mejor tu momento actual?</b></label> <br>
+            <label for="lounchtype"><b style="font-size: 16px;" >¿Cuál frase describe mejor su momento actual?</b></label> <br>
             <select style="font-size: 16px;" id="lounchtype" name="lounchtype" required="" >
                 <option>...</option>
                 <option value="1">Tengo una idea de negocio que creo que tiene potencial.</option>
@@ -101,203 +102,45 @@ width: 80%;
     </div>
 
   <div class="tab">
-
-    <h3>Input at least 3 bearing part numbers or Heavy-Duty Truck Parts that you would like to place within your market or internationally.</h3>
-
-    <p><input placeholder="Prefix - Part Number - Suffix ..." oninput="this.className = ''" name="PartNumber" id="PartNumber1" ></p>
-
-    <p><input placeholder="Prefix - Part Number - Suffix ..." oninput="this.className = ''" name="PartNumber2" id="PartNumber2" ></p>
-
-    <p><input placeholder="Prefix - Part Number - Suffix ..." oninput="this.className = ''" name="PartNumebr3" id="PartNumber3" ></p>
-
+    <h3>Escriba una breve descripción de lo que se trata su proyecto</h3>
+    <p><input placeholder="..." oninput="this.className = ''" name="Descripcion" id="Descripcion" ></p>
+    <br>
   </div>
-
 
 
   <div class="tab">
 
-    <h2>Input at least 3 active part numbers you are searching for:</h2>
+    <h3>Del 1 al 5 ¿Cuál es el nivel de conocimiento que tiene sobre su industria, modelo de negocio, viabilidad de proyecto y pruebas de mercado previamente elaboradas?
+    </h3>
 
-    <p><input placeholder="Prefix - Part Number - Suffix ..." oninput="this.className = ''" name="SearchPartNumber" id="Sp1" ></p>
-
-    <p><input placeholder="Prefix - Part Number - Suffix ..." oninput="this.className = ''" name="SearchPartNumber2" id="Sp2" ></p>
-
-    <p><input placeholder="Prefix - Part Number - Suffix ..." oninput="this.className = ''" name="SearchPartNumebr3" id="Sp3" ></p>
-
-  </div>
-
-  
-
-  <div class="tab">
-
-    <h2>What is your company or trade name ?</h2>
-
-    <p><input placeholder="Enter Your Company Name..." oninput="this.className = ''" name="CompanyName" id="CompanyName" ></p>
-
-    <h2>Website</h2>
-
-    <p><input placeholder="https://www." oninput="this.className = ''" name="WebSite" id="WebSite" ></p>
-
-    <p>Condifential: nothing is shared without your consent.</p>
-
-  </div>
-
-
-
-  <div class="tab">
-
-    
-
-    <div class="boxcent" style="flex-direction: column;" >
-
-      <h2>Select your product line</h2>
-
-    <p><input type="checkbox" oninput="this.className = ''" name="check" onclick="onlyOne(this)" id="Automotive" >Automotive</p>
-
-    <p><input  type="checkbox" oninput="this.className = ''" name="check" onclick="onlyOne(this)" id="Industrial" >Industrial</p>
-
-    <p><input  type="checkbox" oninput="this.className = ''" name="check" onclick="onlyOne(this)" id="Both" >Both</p>
-
+    <div style="display: flex; flex-direction: column; align-items: flex-start;" >
+      <p><input style="width: auto;" type="checkbox" oninput="this.className = ''" name="1" id="1" >1, No tengo conocimiento, quiero conocer el potencial con análisis de mercado</p>
+    <p><input style="width: auto;" type="checkbox" oninput="this.className = ''" name="2" id="2" >2, Estoy empezando y aún me falta fortalecer el conocimiento de mi mercado.</p>
+    <p><input style="width: auto;" type="checkbox" oninput="this.className = ''" name="3" id="3" >3, Tengo conocimiento suficiente, pero estoy dispuesto a recibir consejos y participar en la dirección de las estrategias de mercadotecnia y ventas.</p>
+    <p><input style="width: auto;" type="checkbox" oninput="this.className = ''" name="4" id="4" >4, Estoy ampliamente familiarizado con mi industria y ya he probado mi modelo de negocio satisfactoriamente.</p>
+    <p><input style="width: auto;" type="checkbox" oninput="this.className = ''" name="5" id="5" >5, Soy conocedor experto, busco un aliado que se encargue de la operación y potencialice mi alcance.</p>
     </div>
-
-    
-
+    <br>
   </div>
 
 
-
   <div class="tab">
-
-    <h2>What is your job position function?</h2>
-
-    <div style="display: flex;
-
-    flex-direction: column; align-items: start; ">
-
-      <input type="checkbox" oninput="this.className = ''" name="check" onclick="onlyOne(this)" id="Admin">Administrative
-
-      <input  type="checkbox" oninput="this.className = ''" name="check" onclick="onlyOne(this)" id="Mkt">Marketing
-
-      <input  type="checkbox" oninput="this.className = ''" name="check" onclick="onlyOne(this)" id="Sales" >Sales
-
-      <input  type="checkbox" oninput="this.className = ''" name="check" onclick="onlyOne(this)" id="Op" >Operations
-
-      <input  type="checkbox" oninput="this.className = ''" name="check" onclick="onlyOne(this)" id="Other" >Other
-
-    </div>
-
-  </div>
-
-
-
-  <div class="tab">
-
-    <h2>What other info best describes your company?</h2>
-
-    <div class="boxcent" style="flex-direction: column;"   >
-
-      <textarea name="CompanyDescription" id="CompanyDescription" cols="60" rows="10">
-
-        Example of a brief description:
-
-  
-
-      We are a major distributor from the leading bearing manufacturers: SKF, FAG, Timken… We are a major distributor from the leading Heavy-Duty manufacturers of truck parts and construction equipment: Volvo and Caterpillar…"
-
-      </textarea>
-
-      <br>
-
-    </div>
-
-  </div>
-
-
-
-  <div class="tab">
-
-    
-
     <div >
+      <h3>Perfecto, muchas gracias por tomar el tiempo para responder estas preguntas, a continuación le pedimos nos proporcione algunos datos de contacto para recibir su <span style="color: #b60000;" >Sesión Estratégica GRATUITA</span></h3>
+      
+      <p>Nombre<input placeholder="Su nombre" oninput="this.className = ''" name="Name" id="FirstName"></p>
+      <p>Empresa<input placeholder="Nombre de su compañía" oninput="this.className = ''" name="company" id="Company"></p>
+      <p>Cargo Laboral<input placeholder="..." oninput="this.className = ''" name="ocupation" id="Ocupation"></p>
+      <p>Teléfono <input type="tel" placeholder="Número Fijo o Whatsapp" oninput="this.className = ''" name="Phone" id="Phone"></p>
+      <p>Correo Electrónico<input placeholder="(Para recibir la confirmación de su cita)" oninput="this.className = ''" name="Email" type="email" ></p>
+      
+      <a href="https://www.bstglobaltrade.com//BSTPORTALNET/public_html/aviso.html">Aviso de Privacidad</a>
 
-      <div style="display: flex; flex-direction: column; justify-content: space-evenly;" id='hideMe'>
-
-        <h2>Processing your briefing requirements...</h2>
-
-        <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script><lottie-player style="display: flex; flex-direction: column; justify-content: space-evenly; height: 250px;"  src="https://lottie.host/0fc97299-2565-4c0a-ba72-61a94baed40b/VqXPoC1Jxv.json" background="##eaedf1" speed="1" style="width: 300px; height: 300px" loop autoplay direction="1" mode="normal"></lottie-player>
-
-        <h3>Processing your answers...</h3>
-
-      </div>
-
-
-
-      <div style="display: flex; flex-direction: column; justify-content: space-evenly;" class="hideMe2">
-
-        <h2>Processing your briefing requirements...</h2>
-
-        <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script><lottie-player style="display: flex; flex-direction: column; justify-content: space-evenly; height: 250px;"  src="https://lottie.host/0fc97299-2565-4c0a-ba72-61a94baed40b/VqXPoC1Jxv.json" background="##eaedf1" speed="1" style="width: 300px; height: 300px" loop autoplay direction="1" mode="normal"></lottie-player>
-
-        <h3>Processing your answers...</h3>
-
-      </div>
-
-
-
-    </div>
-
-    <br>
-
-  </div>
-
-  
-
-  <div class="tab">
-
-    
-
-    <div  >
-
-      <h2>CREATE YOUR EXCLUSIVE <span style="color: red;">BST</span> ACCOUNT</h2>
-
-      <p>First Name <input placeholder="First Name" oninput="this.className = ''" name="FName" id="FirstName"></p>
-
-      <p>Last Name <input placeholder="Last Name" oninput="this.className = ''" name="LName" id="LastName" ></p>
-
-      <p>Your Best E-mail <input placeholder="Company E-mail" oninput="this.className = ''" name="JobEmail" type="email" ></p>
-
-      <a href="https://bstportal.com/bstbearings/terminos.php">Legal Terms</a>
-
-      <p> I agree with the terms of use and privacy policy. <input type="checkbox" oninput="this.className = ''" name="check" id="GDPR"> </p>
-
-     
-
-    </div>
-
-    <br>
-
-      <i>Contact details remain confidential until interested agencies formally apply for your project</i>
-
+      <p>Nos comprometemos en no enviar SPAM y sus datos son usados bajo total responsabilidad, Doy consentimiento a recibir contacto de acuerdo a sus términos y condiciones de privacidad.<input style="width: auto;" type="checkbox" oninput="this.className = ''" name="check" id="GDPR"> </p>
+      
       <br>
-
-    <br>
-
+    </div>
   </div>
-
-
-
-  <div class="tab">
-
-    <h2>What is the best way to reach you?</h2>
-
-    <p>Phone Call <input placeholder="Country Code + Area code + Phone Number..." oninput="this.className = ''" name="PhoneNumber" id="Phone"></p>
-
-    <p>Online Meeting <input placeholder="Insert Preferred Platform ..." oninput="this.className = ''" name="OnlineMeet" id="OnlineMeet" ></p>
-
-    <p>Social Media <input placeholder="Insert Link" oninput="this.className = ''" name="Social" id="Social" ></p>
-
-  </div>
-
 
 
   <div style="display: flex; justify-content: space-evenly;" >
@@ -319,27 +162,9 @@ width: 80%;
   <div style="text-align:center;margin-top:40px;">
 
     <span class="step"></span>
-
     <span class="step"></span>
-
     <span class="step"></span>
-
     <span class="step"></span>
-
-    <span class="step"></span>
-
-    <span class="step"></span>
-
-    <span class="step"></span>
-
-    <span class="step"></span>
-
-    <span class="step"></span>
-
-    <span class="step"></span>
-
-    <span class="step"></span>
-
     <span class="step"></span>
 
   </div>

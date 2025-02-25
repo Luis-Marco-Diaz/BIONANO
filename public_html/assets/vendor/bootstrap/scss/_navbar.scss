@@ -283,7 +283,7 @@
 .navbar-dark {
   .navbar-brand {
     color: $navbar-dark-brand-color;
-
+    
     @include hover-focus() {
       color: $navbar-dark-brand-hover-color;
     }

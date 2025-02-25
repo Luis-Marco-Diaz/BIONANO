@@ -11,7 +11,7 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
 :root {
-  --blue: #4e73df;
+  --blue: #012661;
   --indigo: #6610f2;
   --purple: #6f42c1;
   --pink: #e83e8c;
@@ -465,7 +465,10 @@ mark,
   margin-bottom: 1rem;
   font-size: 1.25rem;
 }
-
+.footer{
+  background-color: #011638;
+  padding: 2%;
+}
 .blockquote-footer {
   display: block;
   font-size: 80%;
@@ -4436,6 +4439,10 @@ input[type="button"].btn-block {
   color: rgba(0, 0, 0, 0.9);
 }
 
+.navbar-dark {
+  background-color: #012661;;
+}
+
 .navbar-dark .navbar-brand {
   color: #fff;
 }
@@ -4563,7 +4570,7 @@ input[type="button"].btn-block {
 
 .card-footer {
   padding: 0.75rem 1.25rem;
-  background-color: #f8f9fc;
+  background-color: #011638;
   border-top: 1px solid #e3e6f0;
 }
 

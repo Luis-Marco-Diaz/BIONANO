@@ -22,45 +22,21 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
       
-<!-- Meta Pixel Code -->
-<script>
-!function(f,b,e,v,n,t,s)
-{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-n.queue=[];t=b.createElement(e);t.async=!0;
-t.src=v;s=b.getElementsByTagName(e)[0];
-s.parentNode.insertBefore(t,s)}(window, document,'script',
-'https://connect.facebook.net/en_US/fbevents.js');
-fbq('init', '323508163701093');
-fbq('track', 'PageView');
-</script>
-<noscript><img height="1" width="1" style="display:none"
-src="https://www.facebook.com/tr?id=323508163701093&ev=PageView&noscript=1"
-/></noscript>
-<!-- End Meta Pixel Code -->
-<!-- Google tag (gtag.js) -->
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
 
-  gtag('config', 'G-CVXMKN0XGW');
-</script>
-<script type="text/javascript">
-  window.smartlook||(function(d) {
-    var o=smartlook=function(){ o.api.push(arguments)},h=d.getElementsByTagName('head')[0];
-    var c=d.createElement('script');o.api=new Array();c.async=true;c.type='text/javascript';
-    c.charset='utf-8';c.src='https://web-sdk.smartlook.com/recorder.js';h.appendChild(c);
-    })(document);
-    smartlook('init', 'ca10cafd0ade04abc88396705a983c04bdfa382e', { region: 'eu' });
-</script><script async="" type="text/javascript" charset="utf-8" src="./callcenter _ BIONANO_files/recorder.js.download"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 <!-- STYLE-->
 <style>
 p {
   font-size: 18px;
   font-family: "Poppins", sans-serif;
+}
+.btn-purple{
+  background-color: rgb(94, 4, 94);
+  color: white;
+}
+.btn-purple:hover{
+  background-color: rgb(62, 4, 62);
+  color: white;
 }
 .btn-flotante {
 	font-size: 12px; /* Cambiar el tamaño de la tipografia */
@@ -120,10 +96,10 @@ p {
                         <div class="collapse navbar-collapse" id="navbarNavDropdown">
                           <ul class="navbar-nav">
                             <li class="nav-item ">
-                              <a class="nav-link" href="#">Iniciar Sesión <span class="sr-only">(current)</span></a>
+                              <a class="nav-link" href="#">Iniciar Sesión </a>
                             </li>
                             <li class="nav-item ">
-                              <a class="nav-link" href="#">¡COMBINA Y AHORRA! <span class="sr-only">(current)</span></a>
+                              <a class="nav-link" href="#">¡COMBINA Y AHORRA! </a>
                             </li>
                             <li class="nav-item">
                               <a class="nav-link" href="#">Cómo Comprar</a>
@@ -140,12 +116,17 @@ p {
                               <li class="nav-item">
                                 <a class="nav-link" href="#">Blog</a>
                               </li>
-                              <li class="nav-item">
-                                <a class="nav-link" href="#">Próximos productos</a>
-                              </li>
-                              <li class="nav-item">
-                                <a class="nav-link" href="#">FAQ</a>
-                              </li>
+                              <div class="dropdown ">
+                                  <a class="nav-link dropdown-toggle"  role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Más...
+                                  </a>
+                                  <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item nav-item" href="#">Próximos Productos</a></li>
+                                    <li><a class="dropdown-item" href="#">Preguntas Frecuentes</a></li>
+                                    <li><a class="dropdown-item" href="distribudiores.html">Dónde Comprar</a></li>
+                                     <li><a class="dropdown-item" href="">Contacto</a></li>
+                                  </ul>
+                                </div>
                           </ul>
                         </div>
                       </nav>
@@ -179,18 +160,23 @@ p {
     <ul role="menu" class="nav navbar-nav top_menu   nav-pills">
                             
     <li role="presentation" class="nav-item">
-        <a role="menuitem" href="https://bionano.tv/" class="nav-link ">
+        <a role="menuitem" href="" class="nav-link ">
             <span>Inicio</span>
         </a>
     </li>
     <li role="presentation" class="nav-item">
-        <a role="menuitem" href="https://bionano.tv/compras-combinadas" class="nav-link ">
-            <span>¡COMBINA Y AHORRA!</span>
+        <a role="menuitem" href="https://bstportal.com/bionano/login.php" class="nav-link ">
+            <span>Iniciar Sesión</span>
         </a>
     </li>
     <li role="presentation" class="nav-item">
-        <a role="menuitem" href="https://bionano.tv/como-comprar" class="nav-link ">
-            <span>Cómo Comprar</span>
+        <a role="menuitem" href="https://bionano.tv/compras-combinadas" class="nav-link ">
+            <span>Combina y Ahorra</span>
+        </a>
+    </li>
+    <li role="presentation" class="nav-item">
+        <a role="menuitem" href="" class="nav-link ">
+            <span>Como Comprar</span>
         </a>
     </li>
     <li role="presentation" class="nav-item">
@@ -199,33 +185,43 @@ p {
         </a>
     </li>
     <li role="presentation" class="nav-item">
-        <a role="menuitem" href="https://bionano.tv/acerca-de" class="nav-link ">
+        <a role="menuitem" href="" class="nav-link ">
             <span>Acerca de</span>
         </a>
     </li>
     <li role="presentation" class="nav-item">
-        <a role="menuitem" href="https://bionano.tv/programas" class="nav-link ">
+        <a role="menuitem" href="" class="nav-link ">
             <span>Emprende con nosotros</span>
         </a>
     </li>
     <li role="presentation" class="nav-item">
-        <a role="menuitem" href="https://bionano.tv/blog" class="nav-link ">
+        <a role="menuitem" href="" class="nav-link ">
+            <span>Tienda</span>
+        </a>
+    </li>
+    <li role="presentation" class="nav-item">
+        <a role="menuitem" href="" class="nav-link ">
             <span>Blog</span>
         </a>
     </li>
     <li role="presentation" class="nav-item">
-        <a role="menuitem" href="https://bionano.tv/appointment" class="nav-link ">
-            <span>Cita</span>
-        </a>
-    </li>
-    <li role="presentation" class="nav-item">
-        <a role="menuitem" href="https://bionano.tv/nuevosproductos" class="nav-link ">
+        <a role="menuitem" href="" class="nav-link ">
             <span>Próximos Productos</span>
         </a>
     </li>
     <li role="presentation" class="nav-item">
-        <a role="menuitem" href="https://bionano.tv/preguntasfrecuentes" class="nav-link ">
+        <a role="menuitem" href="" class="nav-link ">
             <span>Preguntas Frecuentes</span>
+        </a>
+    </li>
+    <li role="presentation" class="nav-item">
+        <a role="menuitem" href="distribudiores.html" class="nav-link ">
+            <span>Dónde Comprar</span>
+        </a>
+    </li>
+    <li role="presentation" class="nav-item">
+        <a role="menuitem" href="" class="nav-link ">
+            <span>Contacto</span>
         </a>
     </li>
                         
@@ -259,25 +255,26 @@ p {
         <section class="text-center py-5">
             <div class="container">
               <img class="img-fluid" width="50%" src="./assets/img/BIONANO.png" alt="BIONANO">
-              <p class="text-justify" >La línea de suplementos alimenticios <b>BIONANO®</b> son un complemento valioso para aquellos que buscan una vida plena, saludable y equilibrada. Al integrarlos en tu rutina diaria, estarás fortaleciendo cada uno de los pilares fundamentales del bienestar, asegurando así una mejor calidad de vida.</p>
+              <p class="text-justify" >La línea de suplementos alimenticios <b>BIONANO®</b> son un complemento valioso para aquellos que buscan una vida plena, saludable y equilibrada. Al integrarlos en tu rutina diaria, estarás fortaleciendo cada uno de los pilares fundamentales del bienestar, asegurando así una <b>mejor calidad de vida.</b></p>
                 <a href="https://wa.me/+5215640039245?text=Hola%20quiero%20más%20información%20sobre%20los%20suplementos%20BIONANO" class="btn-flotante" alt="Chat on WhatsApp"> <svg xmlns="http://www.w3.org/2000/svg" height="20" width="20" viewBox="0 0 448 512"><path fill="#06e802" d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7 .9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"></path></svg> WhatsApp
                 </a>
             </div>
           </section>
-          <div class="album  ">
+          <div class="album">
             <div class="container">
               <div class="row">
                 <div class="col-md-4">
                   <div class="card mb-4 shadow-sm">
                     <img src="./assets/img/BIONANO-LIFE.png" alt="BIONANO LIFE, Estimulador de Células Madre">
-                    <div class="card-body   ">
-                      <h4 class="card-text"><b>BIONANO LIFE</b></h4>
-                      <p> Potencia tu energía diaria con <b>LIFE</b>, un suplemento que estimula la producción de células madre para una salud celular óptima.
+                    <div class="card-body" style="background-color: #005c542b">
+                      <h4 class="text-center card-text"><b>BIONANO LIFE</b></h4>
+                      <p class="text-center" > Potencia tu energía diaria con <b>LIFE</b>, un suplemento que estimula la producción de células madre para una salud celular óptima.
                       <br>
                         "Vive al máximo con <b>LIFE</b>: tu energía diaria en cada cápsula." </p>
-                      <div class="d-flex justify-content-between align-items-center">
-                        <div class="btn-group">
-                          <button type="button" class="btn btn-outline-secondary">Ver Más</button>
+                      <div class="d-flex justify-content-center align-items-center">
+                        <div class="d-md-block d-flex justify-content-spacearrownd ">
+                          <a type="button" href=""  class="btn btn-success"><b>Ver Más</b></a>
+                          <a type="button" href="" class="btn mx-3 btn-success"><b>Ver Video</b></a>
                         </div>
                       </div>
                     </div>
@@ -286,14 +283,16 @@ p {
                 <div class="col-md-4">
                   <div class="card mb-4 shadow-sm">
                     <img src="./assets/img/BIONANO-ALFAOMEGA.png" alt="ALFA & OMEGA, Menos estrés y mejor memoria">
-                    <div class="card-body">
-                      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                      <div class="d-flex justify-content-between align-items-center">
-                        <div class="btn-group">
-                          <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                          <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                    <div class=" text-center card-body" style="background-color: #5c00002b">
+                      <h4 class="card-text"><b>BIONANO ALFA & OMEGA</b></h4>
+                      <p> Este neuroprotector y neuroregenerador mejora tus funciones cognitivas y protege tu salud cerebral.
+                      <br>
+                        "Despierta tu mente con <B>ALFA & OMEGA</B>: protección y claridad."</p>
+                      <div class="d-flex justify-content-center align-items-center">
+                        <div class="d-md-block d-flex justify-content-spacearrownd ">
+                          <a type="button" href=""  class="btn btn-danger"><b>Ver Más</b></a>
+                          <a type="button" href="" class="btn mx-3 btn-danger"><b>Ver Video</b></a>
                         </div>
-                        <small class="text-muted">9 mins</small>
                       </div>
                     </div>
                   </div>
@@ -301,21 +300,55 @@ p {
                 <div class="col-md-4">
                   <div class="card mb-4 shadow-sm">
                     <img src="./assets/img/BIONANO-FEM ROSE.png" alt="BIONANO FEM ROSE, Regulador hormonal para la etapa de menopausia">
-                    <div class="card-body">
-                      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                      <div class="d-flex justify-content-between align-items-center">
-                        <div class="btn-group">
-                          <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                          <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                    <div class="text-center card-body" style="background-color: #56005c2b">
+                      <h4 class="card-text"><b>BIONANO FEM ROSE</b></h4>
+                      <p> Diseñado especialmente para apoyar la salud femenina durante la menopausia, FEM ROSE equilibra tus hormonas y mejora tu bienestar.
+                      <br>
+                       "Libertad hormonal con <b>FEM ROSE</b>: tu aliado en cada etapa." </p>
+                      <div class="d-flex justify-content-center align-items-center">
+                        <div class="d-md-block d-flex justify-content-spacearrownd ">
+                          <a type="button" href=""  class="btn btn-purple"><b>Ver Más</b></a>
+                          <a type="button" href="" class="btn mx-3 btn-purple"><b>Ver Video</b></a>
                         </div>
-                        <small class="text-muted">9 mins</small>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
+              <div class="row" >
+                <div class="container text-center">
+                    <div class="row align-items-start">
+                      <div class="col">
+                        <img idth="250px" src="./assets/img/Registro ante Cofepris.png" alt="">
+                      </div>
+                      <div class="col">
+                        <img width="250px" src="./assets/img/8PILARES.png" alt="">
+                      </div>
+                      <div class="col">
+                        <img  idth="250px" src="./assets/img/Registro FDA.png" alt="">
+                      </div>
+                    </div>
+                  </div>
+              </div>
+              <div class="row" >
+                <div class="s_title pt40 pb40 o_colored_level bg-200 ">
+                        <div class="s_allow_columns container-fluid ">
+                            <p><br></p><div class="s_text_highlight o_colored_level my-3 o_cc o_cc3 w-100 text-center" style="background-color: rgba(0, 0, 0, 0); background-image: linear-gradient(135deg, rgb(1, 38, 97) 0%, rgb(0, 151, 178) 100%); border-radius: 10px;">
+                        <div class="container p-3 text-light">
+                            <h2> <strong>Protege tu Salud con Nanotecnología</strong></h2>
+                            <p style="text-align: justify;"><span style="font-size: 1.125rem;">Utilizamos materias primas de vanguardia y técnicas avanzadas de fabricación para garantizar que cada producto no solo cumpla si no supere los más altos estándares. Nuestros suplementos están diseñados para ofrecer beneficios reales y medibles, sustentados por la ciencia más reciente.</span></p>
+                          
+                        </div>
+                    </div>
+                        </div>
+                </div>
+              </div>
             </div>
           </div>
+
+        <section>
+
+        </section>
           
 </main>
 

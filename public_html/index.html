@@ -68,10 +68,13 @@ p {
 		left: 20px;
 	}
 }
+.no-select {
+      user-select: none;
+    }
 </style>
 
 </head>
-<body>
+<body oncopy="return false" onpaste="return false" class="no-select" >
 <div id="wrapwrap" >
 <header id="top" data-anchor="true" data-name="Header" data-extra-items-toggle-aria-label="Botón de elementos adicionales">    
 <!-- NAV BAR MAIN-->

@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+
+<html lang="es-MX" >
+  
+<head>   
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="BIONANO">
+    <meta property="og:site_name" content="BIONANO">
+    <meta property="og:url" content="http://bionano.tv/callcenter">
+    <meta property="og:image" content="http://bionano.tv/web/image/website/1/logo?unique=f38826f">
+        
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+    <title>BIONANO</title>
+    <link type="image/x-icon" rel="shortcut icon" href="https://bionano.tv/web/image/website/1/favicon?unique=f38826f">
+    <link type="text/css" rel="stylesheet" href="../assets/css/sb-admin-2.css">
+    <link type="text/css" rel="stylesheet" href="../assets/css/sb-admin-2.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+<script src="https://kit.fontawesome.com/6c459f8fc0.js" crossorigin="anonymous"></script>      
+<!-- STYLE-->
+<style>
+p {
+  font-size: 18px;
+font-family: 'Poppins';
+}
+.btn-flotante {
+	font-size: 12px; /* Cambiar el tamaño de la tipografia */
+	text-transform: uppercase; /* Texto en mayusculas */
+	font-weight: bold; /* Fuente en negrita o bold */
+	color: #ffffff; /* Color del texto */
+	border-radius: 20px; /* Borde del boton */
+	letter-spacing: 2px; /* Espacio entre letras */
+	background-color: #087e2b; /* Color de fondo */
+	padding: 18px 30px; /* Relleno del boton */
+	position: fixed;
+	bottom: 40px;
+	left: 40px;
+	transition: all 300ms ease 0ms;
+	box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+	z-index: 99;
+}
+.btn-flotante:hover {
+	background-color: #024a0f; /* Color de fondo al pasar el cursor */
+	box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.3);
+  color: #ffffff; /* Color del texto */
+	transform: translateY(-7px);
+}
+@media only screen and (max-width: 600px) {
+ 	.btn-flotante {
+		font-size: 10px;
+		padding: 12px 20px;
+		bottom: 20px;
+		left: 20px;
+	}
+}
+/* The actual timeline (the vertical ruler) */
+.main-timeline {
+  position: relative;
+}
+
+/* The actual timeline (the vertical ruler) */
+.main-timeline::after {
+  content: "";
+  position: absolute;
+  width: 6px;
+  background-color: #939597;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -3px;
+}
+
+/* Container around content */
+.timeline {
+  position: relative;
+  background-color: inherit;
+  width: 50%;
+}
+
+/* The circles on the timeline */
+.timeline::after {
+  content: "";
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  right: -13px;
+  background-color: #939597;
+  border: 5px solid #012661;
+  top: 15px;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+/* Place the container to the left */
+.left {
+  padding: 0px 40px 20px 0px;
+  left: 0;
+}
+
+/* Place the container to the right */
+.right {
+  padding: 0px 0px 20px 40px;
+  left: 50%;
+}
+
+/* Add arrows to the left container (pointing right) */
+.left::before {
+  content: " ";
+  position: absolute;
+  top: 18px;
+  z-index: 1;
+  right: 30px;
+  border: medium solid white;
+  border-width: 10px 0 10px 10px;
+  border-color: transparent transparent transparent white;
+}
+
+/* Add arrows to the right container (pointing left) */
+.right::before {
+  content: " ";
+  position: absolute;
+  top: 18px;
+  z-index: 1;
+  left: 30px;
+  border: medium solid white;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent white transparent transparent;
+}
+
+/* Fix the circle for containers on the right side */
+.right::after {
+  left: -12px;
+}
+
+/* Media queries - Responsive timeline on screens less than 600px wide */
+@media screen and (max-width: 600px) {
+  /* Place the timelime to the left */
+  .main-timeline::after {
+    left: 31px;
+  }
+
+  /* Full-width containers */
+  .timeline {
+    width: 100%;
+    padding-left: 70px;
+    padding-right: 25px;
+  }
+
+  /* Make sure that all arrows are pointing leftwards */
+  .timeline::before {
+    left: 60px;
+    border: medium solid white;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent white transparent transparent;
+  }
+
+  /* Make sure all circles are at the same spot */
+  .left::after,
+  .right::after {
+    left: 18px;
+  }
+
+  .left::before {
+    right: auto;
+  }
+
+  /* Make all right containers behave like the left ones */
+  .right {
+    left: 0%;
+  }
+}
+</style>
+
+</head>
+<body>
+<div id="wrapwrap" >
+<header id="top" data-anchor="true" data-name="Header" data-extra-items-toggle-aria-label="Botón de elementos adicionales">    
+<!-- NAV BAR MAIN-->
+<nav data-name="Navbar" aria-label="Main" class="navbar navbar-expand-lg navbar-dark o_colored_level o_cc d-none d-lg-block pt-3 shadow-sm ">
+<div id="o_main_nav" class="o_main_nav container flex-wrap">
+    <div class="o_header_hide_on_scroll d-grid align-items-center w-100 o_grid_header_3_cols pb-3">
+        <ul class="navbar-nav align-items-center gap-1"></ul>              
+    <a data-name="Navbar Logo" class="navbar-brand logo mx-auto mw-100">
+            
+            <span role="img" aria-label="Logo of BIONANO" title="BIONANO"><img src="../assets/img/7-life-BCO.png" class="img img-fluid mx-auto d-block " width="15%" alt="BIONANO" loading="lazy" ></span>
+        </a>
+    
+        <ul class="navbar-nav align-items-center gap-1 flex-wrap justify-content-end ms-auto"></ul>
+            </div>
+                <div class="d-flex justify-content-center w-100">
+                    
+                   <nav class="nav navbar-nav top_menu font-weight-bold ">
+                        <a class="navbar-brand" href="../index.html">Inicio</a>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                          <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                          <ul class="navbar-nav">
+                            
+                            <li class="nav-item ">
+                              <a class="nav-link" href="./combina.html">¡COMBINA Y AHORRA! </a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link" href="./como-comprar.html">Cómo Comprar</a>
+                            </li>
+                            <li class="nav-item">
+                               <a class="nav-link" href="https://www.amazon.com.mx/dp/B0F2GJ8BCK">Tienda</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./acerca.html">Acerca de</a>
+                              </li>
+                              <li class="nav-item">
+                                <a class="nav-link" href="./programas.html">Emprende con nosotros</a>
+                              </li>
+                              <li class="nav-item">
+                                <a class="nav-link" href="./blog.html">Blog</a>
+                              </li>
+                              <div class="dropdown ">
+                                  <a class="nav-link dropdown-toggle"  role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Más...
+                                  </a>
+                                  <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item nav-item" href="./nuevos.html">Próximos Productos</a></li>
+                                    <li><a class="dropdown-item" href="./faq.html">Preguntas Frecuentes</a></li>
+                                    <li><a class="dropdown-item" href="./distribudiores.html">Dónde Comprar</a></li>
+                                  </ul>
+                                </div>
+                          </ul>
+                        </div>
+                      </nav>
+                </div>
+            </div>
+</nav>
+<!-- NAV BAR MOBILE-->
+    <nav data-name="Navbar" aria-label="Mobile" class="navbar  navbar-dark o_colored_level o_cc o_header_mobile d-block d-lg-none shadow-sm px-0 ">
+
+        <div class="o_main_nav container flex-wrap justify-content-between">
+    <a data-name="Navbar Logo" class="navbar-brand logo ">
+            
+            <span role="img" aria-label="Logo of BIONANO" title="BIONANO"><img src="./assets/img/7-life-BCO.png" class="img img-fluid" width="95" height="40" alt="BIONANO" loading="lazy" ></span>
+        </a>
+    
+            <ul class="o_header_mobile_buttons_wrap navbar-nav flex-row align-items-center gap-2 mb-0">
+                <li class="o_not_editable">
+                    <button class="nav-link btn me-auto p-2 o_not_editable" type="button" data-bs-toggle="offcanvas" data-bs-target="#top_menu_collapse_mobile" aria-controls="top_menu_collapse_mobile" aria-expanded="false" aria-label="Alternar navegación">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </li>
+            </ul>
+            <div id="top_menu_collapse_mobile" class="offcanvas offcanvas-end o_navbar_mobile" style="background-color: #012661;" >
+                <div class="offcanvas-header justify-content-end o_not_editable">
+                    <button type="button" class="nav-link btn-close" data-bs-dismiss="offcanvas" aria-label="Cerrar"></button>
+                </div>
+                <div class="offcanvas-body d-flex flex-column justify-content-between h-100 w-100">
+                    <ul class="navbar-nav">
+                        
+                        
+    <ul role="menu" class="nav navbar-nav top_menu   nav-pills">
+                            
+    <li role="presentation" class="nav-item">
+        <a role="menuitem" href="../index.html" class="nav-link ">
+            <span>Inicio</span>
+        </a>
+    </li>
+    <li role="presentation" class="nav-item">
+        <a role="menuitem" href="./combina.html" class="nav-link ">
+            <span>¡COMBINA Y AHORRA!</span>
+        </a>
+    </li>
+    <li role="presentation" class="nav-item">
+        <a role="menuitem" href="./como-comprar.html" class="nav-link ">
+            <span>Cómo Comprar</span>
+        </a>
+    </li>
+    <li role="presentation" class="nav-item">
+        <a role="menuitem" href="./tienda.html" class="nav-link ">
+            <span>Tienda</span>
+        </a>
+    </li>
+    <li role="presentation" class="nav-item">
+        <a role="menuitem" href="./acerca.html" class="nav-link ">
+            <span>Acerca de</span>
+        </a>
+    </li>
+    <li role="presentation" class="nav-item">
+        <a role="menuitem" href="./programas.html" class="nav-link ">
+            <span>Emprende con nosotros</span>
+        </a>
+    </li>
+    <li role="presentation" class="nav-item">
+        <a role="menuitem" href="./blog.html" class="nav-link ">
+            <span>Blog</span>
+        </a>
+    </li>
+    <li role="presentation" class="nav-item">
+        <a role="menuitem" href="./nuevos.html" class="nav-link ">
+            <span>Próximos Productos</span>
+        </a>
+    </li>
+    <li role="presentation" class="nav-item">
+        <a role="menuitem" href="./faq.html" class="nav-link ">
+            <span>Preguntas Frecuentes</span>
+        </a>
+    </li>
+                        
+    </ul>
+                        
+                        
+                    </ul>
+                    <ul class="navbar-nav gap-2 mt-3 w-100">  
+                        
+        <li data-name="Language Selector" class="o_header_language_selector ">
+        
+        
+        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+    
+    </nav>
+    
+</header>
+
+<!-- MAIN-->
+<main>         
+ <section class=" container-fluid text-center py-5">
+    <div class="row g-2 text-center">
+                <div class="col-lg-12 mt-5 mb-5 px-5" >
+                    <h1 style="color: #012661;" ><B>Bienvenido a Bionano Technologys S.A. de C.V.</B></h1>
+                    <p>Desde nuestra fundación en el año 2010, hemos estado a la vanguardia de la innovación en suplementos alimenticios. Nuestro compromiso es ofrecer productos de la más alta calidad, elaborados con ingredientes puros y avanzados para potenciar la salud y bienestar de la humanidad.</p>
+                    <p><b>¿Quiénes Somos?</b></p>
+                    <p>Somos una compañía establecida México desde el año 2010, hemos crecido de manera constante, convirtiéndonos cada día en una empresa más consciente de producir mejores suplementos alimenticios. Cada paso de nuestra evolución ha estado guiado por la pasión por la <b>excelencia</b> y el deseo de <b>proporcionar soluciones efectivas para mejorar la calidad de vida de nuestros clientes</b>.</p>
+                </div>
+    </div>
+ </section>
+ <div class="text-center" >
+     <img width="50%" src="../assets/img/AboutUs.webp" alt="">
+ </div>
+ <section style="background-color: #F0F2F5;">
+  <div class="container py-5">
+    <div class="main-timeline">
+      <div class="timeline left">
+        <div class="card">
+          <div class="card-body p-4">
+            <h3>2010 - FUNDACIÓN</h3>
+            <p class="mb-0"><b>Bionano Technologys S.A. de C.V.</b> se inscribió en la ley mexicana el 21 de junio de 2010..</p>
+          </div>
+        </div>
+      </div>
+      <div class="timeline right">
+        <div class="card">
+          <div class="card-body p-4">
+            <h3>2011</h3>
+            <p class="mb-0">Al unificar la idea de desarrollar suplementos alimenticios para promover la salud en la población, nace la marca <b>7&LIFE ®</b></p>
+          </div>
+        </div>
+      </div>
+      <div class="timeline left">
+        <div class="card">
+          <div class="card-body p-4">
+            <h3>2012</h3>
+            <p class="mb-0">En los primeros años incursionamos en el mercado con el producto <b>EXCEL-SIS CELLS</b>, que más tarde modificaría su nombre a <b>LIFE.</b></p>
+          </div>
+        </div>
+      </div>
+      <div class="timeline right">
+        <div class="card">
+          <div class="card-body p-4">
+            <h3>2014</h3>
+            <p class="mb-0">A la brevedad salió al mercado <b>ALFA & OMEGA</b>, enfocando los beneficios en un suplemento que actuara como un  antioxidante y antienvejecimiento.</p>
+          </div>
+        </div>
+      </div>
+      <div class="timeline left">
+        <div class="card">
+          <div class="card-body p-4">
+            <h3>2016</h3>
+            <p class="mb-0">​Finalmente, salió a la venta un producto enfocado en las mujeres que se encuentran en la etapa de menopausia, buscando disminuir los síntomas de la misma, el cual fue nombrado como <b>MENOPLUS</b>.</p>
+          </div>
+        </div>
+      </div>
+      <div class="timeline right">
+        <div class="card">
+          <div class="card-body p-4">
+            <h3>2024</h3>
+            <p class="mb-0">Actualmente seguimos trabajando en la creación de nuevos productos que complementen la línea de productos <b>BIONANO</b>, enfocados en mantener una vida equilibrada para la humanidad.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="container">
+    <div class="row justify-content-start p-4">
+        <div class="col align-self-center ">
+            <h3 style="color: #012661;">Compromiso con la Calidad</h3>
+            <p>Utilizamos materias primas de vanguardia y técnicas avanzadas de fabricación para garantizar que cada producto no solo cumpla sino supere los más altos estándares. Nuestros suplementos están diseñados para ofrecer beneficios reales y medibles, sustentados por la ciencia más reciente.</p>
+        </div>
+        <div class="col justify-content-center">
+            <div><img class="rounded shadow"  width="100%" src="../assets/img/about1.webp" alt=""></div>
+        </div>
+    </div>
+    <div class="row justify-content-start p-4">
+        <div class="col justify-content-center">
+            <div><img class="rounded shadow"  width="100%" src="../assets/img/about2.webp" alt=""></div>
+        </div>
+        <div class="col align-self-center ">
+            <h3 style="color: #024a0f;">Certificaciones y Aprobaciones</h3>
+            <p>Estamos orgullosos de estar registrados tanto ante la COFEPRIS en México como ante la FDA en Estados Unidos, lo que valida nuestro compromiso con la calidad y la seguridad en nuestros productos.</p>
+        </div>
+        
+    </div>
+    <div class="row justify-content-start p-4">
+        <div class="col align-self-center ">
+            <h3 style="color: #012661;">Visión y Futuro</h3>
+            <p>Miramos hacia el futuro con planes de expansión emocionantes y la introducción de innovadores productos que prometen revolucionar el mercado. Nuestro objetivo es llegar a más personas en América del Norte y América del Sur, llevando nuestro enfoque en la salud y el bienestar a una audiencia global.</p>
+        </div>
+        <div class="col justify-content-center">
+            <div><img class="rounded shadow"  width="100%" src="../assets/img/about3.webp" alt=""></div>
+        </div>
+    </div>
+   <br>
+</section>
+</main>
+
+
+<!-- FOOTER-->
+<footer id="bottom" data-anchor="true" data-name="Footer" class="footer ">
+                    <div id="footer" >
+            <section class="s_text_block pb16 pt0 " data-snippet="s_text_block" data-name="Text">
+                <div class="container">
+                    <div class="row">
+                        <div id="connect" class="col-lg-6 offset-lg-1 pt24 pb24 o_colored_level">
+                            <h5 class="mb-3"><br></h5><h5 class="mb-3 text-light">Contacto</h5>
+                            <ul class="list-unstyled">
+                                <p class="text-light" ><svg style="width: 3%;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free v7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path fill="#ffffff" d="M380.9 97.1c-41.9-42-97.7-65.1-157-65.1-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480 117.7 449.1c32.4 17.7 68.9 27 106.1 27l.1 0c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3 18.6-68.1-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1s56.2 81.2 56.1 130.5c0 101.8-84.9 184.6-186.6 184.6zM325.1 300.5c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8s-14.3 18-17.6 21.8c-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7 .9-6.9-.5-9.7s-12.5-30.1-17.1-41.2c-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2s-9.7 1.4-14.8 6.9c-5.1 5.6-19.4 19-19.4 46.3s19.9 53.7 22.6 57.4c2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4s4.6-24.1 3.2-26.4c-1.3-2.5-5-3.9-10.5-6.6z"/></svg> </i><strong>55 2311 7401</strong></p>
+                                <li><svg style="width: 3%;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free v7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path fill="#ffffff" d="M48 64c-26.5 0-48 21.5-48 48 0 15.1 7.1 29.3 19.2 38.4l208 156c17.1 12.8 40.5 12.8 57.6 0l208-156c12.1-9.1 19.2-23.3 19.2-38.4 0-26.5-21.5-48-48-48L48 64zM0 196L0 384c0 35.3 28.7 64 64 64l384 0c35.3 0 64-28.7 64-64l0-188-198.4 148.8c-34.1 25.6-81.1 25.6-115.2 0L0 196z"/></svg> <a href="mailto:contacto@bionanoventas.com" data-bs-original-title="" title=""><font class="text-light" >contacto@bionanoventas.com</font><font style="display: inline-block;"></font></a></li><li><i class="fa fa-calendar-check-o fa-fw me-2"></i>
+                                  
+                                  </li>
+                                <li></li>
+                            </ul>
+                            <div class="s_social_media text-start o_not_editable" data-snippet="s_social_media" data-name="Social Media" contenteditable="false">
+                                <h5 class="s_social_media_title d-none">Síganos</h5>
+<a href="https://bionano.tv/website/social/facebook" class="s_social_media_facebook" target="_blank" aria-label="Facebook">
+                                    <i class="fa fa-facebook rounded-circle shadow-sm o_editable_media"></i>
+                                </a>
+<a href="https://bionano.tv/website/social/instagram" class="s_social_media_instagram" target="_blank" aria-label="Instagram">
+                                    <i class="fa rounded-circle shadow-sm o_editable_media fa-instagram"></i>
+                                </a>
+</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    <div class="footer_copyright " data-name="Copyright">
+                        <div class="container py-3">
+                            <div class="row">
+                                <div class="col-sm text-center text-sm-start ">
+                                    <span class="footer_copyright_name me-2 text-light">© 2010-2025 BIONANO TECHNOLOGYS S.A. DE C.V. Todos los derechos reservados.</span>
+    </div>
+                                
+                            </div>
+                        </div>
+    </div>
+</footer>
+</body>
+       
